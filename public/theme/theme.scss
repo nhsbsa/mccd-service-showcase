@@ -1,0 +1,69 @@
+
+$govuk-page-width: 1200px;
+/*FONTS*/
+$govuk-font-family: var(--font-body);
+$govuk-font-family-headings: var(--font-header);
+
+/*COLOURS*/
+$govuk-brand-colour: #1d70b8;
+$govuk-canvas-background-colour: #fcfcfc;
+$govuk-body-background-colour: #FFFFFF;
+$govuk-text-colour: #0b0c0c;
+$govuk-secondary-text-colour: #505a5f;
+$govuk-border-colour: #b1b4b6;
+
+/*LINKS*/
+$govuk-link-colour: #1d70b8;
+$govuk-hover-colour: #003078;
+$govuk-link-visited-colour: #4c2c92;
+$govuk-link-hover-colour: #003078;
+$govuk-link-active-colour: #0b0c0c;
+
+/*BUTTONS*/
+//$govuk-button-background-colour: ;
+//$govuk-button-text-colour: white;
+
+/*HEADER*/
+$govuk-header-background:  white;
+$govuk-header-text-colour: $govuk-text-colour;
+$govuk-header-link-active: #0b0c0c;
+//$govuk-header-nav-item-border-color: ;
+$govuk-header-border-color: #b1b4b6;
+$govuk-header-border-width: 1px;
+
+/*FOCUS STATE*/
+$govuk-focus-text-colour: #0b0c0c;
+$govuk-focus-colour: #fd0;
+
+/*FORMS*/
+$govuk-error-colour: #d4351c;
+$govuk-success-colour: #00703c;
+$govuk-input-border-colour: $govuk-text-colour;
+
+/*MISC*/
+$govuk-details-summary-title-colour: #1d70b8;
+
+/*BANNERS and CALLOUTS*/
+$govuk-inset-text-border-colour: #5694ca;
+$govuk-inset-text-background-colour: #e9f2fd;
+$govuk-warning-callout-colour: #FF611A;
+$govuk-notification-banner-border: $govuk-brand-colour;
+
+/*DASHBOARD*/
+$govuk-summary-card-title-background: $govuk-canvas-background-colour;
+//$govuk-tag-green: #00703c;
+//$govuk-tag-yellow: #ffdd00;
+//$govuk-tag-grey: #505a5f;
+//$govuk-tag-blue: #1d70b8;
+
+.govuk-header {
+  position: relative;
+  margin-bottom: 40px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+@media (min-width: 40.0625em) {
+  p, .govuk-body, .govuk-body-m {
+    line-height: 1.5 !important;
+  }
+}
