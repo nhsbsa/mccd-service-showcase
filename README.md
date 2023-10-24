@@ -38,7 +38,7 @@ By default, the showcase site runs on the same port as the prototype kit, so you
 
 For example, to change the showcase site to use Port 3001 instead of Port 3000:
 
-1. In `.env.local` change the port `NEXTAUTH_URL=http://localhost:3000` to `NEXTAUTH_URL=http://localhost:3001`
+1. In `.env.local` change `NEXTAUTH_URL=http://localhost:3000` to `NEXTAUTH_URL=http://localhost:3001`
 2. In `package.json`, within the 'scripts' object change `"dev": "next dev",` to `"dev": "next dev -p 3001",`
 3. Rebuild your local environment
 4. A local instance of the service should now be available in your browser window at http://localhost:3001
