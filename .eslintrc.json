@@ -1,0 +1,31 @@
+{
+  "extends": [
+    "airbnb",
+    "next/core-web-vitals"
+  ],
+  "plugins": ["testing-library"],
+  "rules": {
+    "import/no-named-as-default": "off",
+    "react/function-component-definition": "off",
+    "@typescript-eslint/no-explicit-any": "off",
+    "react/require-default-props": "off",
+    "react/jsx-filename-extension": ["error", { "extensions": [".jsx", ".tsx"] }],
+    "import/no-unresolved": "off",
+    "import/prefer-default-export": "off",
+    "import/extensions": ["error", "ignorePackages", { "js": "never", "ts": "never", "tsx": "never"
+    }],
+    "jsx-a11y/no-redundant-roles": ["error", { "button": ["button"] }]
+  },
+  "overrides": [
+    {
+      "files": [
+        "**/tests/**/*.[jt]s?(x)",
+        "**/?(*.)+(spec|test).[jt]s?(x)"
+      ],
+      "extends": ["plugin:testing-library/react"],
+      "rules": {
+        "no-undef": "off"
+      }
+    }
+  ]
+}

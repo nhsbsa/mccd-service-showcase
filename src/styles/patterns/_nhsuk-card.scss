@@ -1,0 +1,95 @@
+.nhsuk-card-row {
+  display: flex;
+  flex-direction: column;
+  @media (min-width: 40.0625em) {
+    flex-direction: row;
+  }
+}
+
+.nhsuk-card-column {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+}
+
+.nhsuk-card {
+  margin-bottom: 40px;
+  background: #fff;
+  border: 1px solid #d8dde0;
+  position: relative;
+  width: 100%;
+}
+
+@media (min-width: 40.0625em) {
+  .nhsuk-card {
+    margin-bottom: 48px
+  }
+}
+
+.nhsuk-card__img {
+  border-bottom: 1px solid #f0f4f5;
+  display: block;
+  width: 100%
+}
+
+@media print {
+  .nhsuk-card__img {
+    display: none
+  }
+}
+
+.nhsuk-card__content {
+  box-sizing: border-box;
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  position: relative
+}
+
+.nhsuk-card__content > :first-child {
+  margin-top: 0
+}
+
+.nhsuk-card__content > :last-child {
+  margin-bottom: 0
+}
+
+@media (min-width: 40.0625em) {
+  .nhsuk-card__content {
+    padding: 32px
+  }
+}
+
+.nhsuk-card__description, .nhsuk-card__heading, .nhsuk-card__metadata {
+  margin-bottom: 16px
+}
+
+.nhsuk-card--clickable {
+  display: flex;
+  flex: 1 1 auto;
+  border-bottom-width: 4px;
+
+  button.unstyled {
+    height: 100%;
+  }
+}
+
+.nhsuk-card--clickable:active, .nhsuk-card--clickable:hover {
+  cursor: pointer
+}
+
+.nhsuk-card--clickable:hover {
+  border-color: #aeb7bd
+}
+
+.nhsuk-card--clickable:active {
+  border-color: #aeb7bd;
+  bottom: -1px
+}
+
+.nhsuk-card__arrow {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: auto;
+}

@@ -1,0 +1,26 @@
+---
+title: Data Test
+tags:
+  - Medium priority
+  - High value
+---
+# Data test
+<GridRow>
+    <GridColumn width={'3/4'}>
+        <ReadData fields={'title:tags'} where={'tags:high value'}>
+            <Table transform={['tags']} caption={'Pages from the features directory with High value tag'}/>
+        </ReadData>
+    </GridColumn>
+    <GridColumn width={'1/4'}>
+        ### Tagged
+        <TagGroup frontmatter={frontmatter}></TagGroup>
+    </GridColumn>
+</GridRow>
+  <Tabs title="Test Tabs">
+  <TabPanel title="Tab 1">
+    <p>Content for Tab 1</p>
+  </TabPanel>
+  <TabPanel title="Tab 2">
+    <p>Content for Tab 2</p>
+  </TabPanel>
+</Tabs>

@@ -1,0 +1,247 @@
+:root {
+  --hippo-light-grey: #eff3f6;
+  --hippo-grey: #e5ebf0;
+  --hippo-purple: #3c1053;
+  --hippo-dark-blue: #0c2340;
+  --hippo-light-green: #005e5d;
+  --hippo-dark-green: #004c4b;
+  --hippo-pink: #ffa3b5;
+  --hippo-blue: #88dbdf;
+  --hippo-white: #ffffff;
+  --hippo-black: #000000;
+}
+$govuk-global-styles: true;
+$govuk-new-link-styles: true;
+@import '../../public/theme/theme';
+$govuk-tag-green: #00703c !default;
+$govuk-tag-yellow: #ffdd00 !default;
+$govuk-tag-grey: #505a5f !default;
+$govuk-tag-blue: #1d70b8 !default;
+@function cid-shade($colour, $percentage) {
+  @return mix(#000000, $colour, $percentage);
+}
+
+@function cid-tint($colour, $percentage) {
+  @return mix(#FFFFFF, $colour, $percentage);
+}
+
+@import "govuk-frontend/govuk/all";
+@import "patterns/task-list";
+@import "patterns/nhs-warning-callout";
+@import "patterns/nhsuk-card";
+@import "patterns/nhs_download";
+@import "patterns/steps";
+@import "patterns/document-list";
+
+.govuk-header__logotype:last-child {
+  margin-right: 0;
+  object-fit: contain;
+  max-height: 60px;
+  object-position: left;
+}
+
+pre {
+  display: inline-block;
+  margin: 0;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.unstyled {
+  all: unset;
+
+  &:focus {
+    background-color: #ffeb3b;
+    box-shadow: 0 -2px #ffeb3b, 0 4px #212b32;
+    color: #212b32;
+    outline: 4px solid transparent;
+    text-decoration: none;
+  }
+}
+
+.govuk-notification-banner {
+  border-width: 8px;
+}
+
+.govuk-header__link:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 0.3em;
+}
+
+.govuk-header__navigation-item--active a:link,
+.govuk-header__navigation-item--active a:hover,
+.govuk-header__navigation-item--active a:visited {
+  color: $govuk-header-link-active;
+}
+
+.govuk-header {
+  background: $govuk-header-background;
+  border-bottom: 0px;
+}
+
+.govuk-header__container {
+  border-bottom: $govuk-header-border-width solid $govuk-header-border-color;
+}
+
+.govuk-header__logo .govuk-header__link {
+  width: fit-content;
+  display: block;
+}
+
+.govuk-header__content,
+.govuk-header__link:link,
+.govuk-header__link:visited,
+.govuk-header__service-name {
+  color: $govuk-header-text-colour;
+}
+
+nav.no-service-name {
+  @media (min-width: 48.0625em) {
+    position: absolute;
+    bottom: 0px;
+  }
+}
+
+.govuk-summary-card__title-wrapper {
+  background-color: $govuk-summary-card-title-background;
+}
+
+.govuk-summary-list__value {
+  white-space: pre-wrap;
+}
+
+// Override inset text.
+$govuk-inset-text-background-colour: none !default;
+.govuk-inset-text {
+  background-color: $govuk-inset-text-background-colour;
+  border-left: 10px solid $govuk-inset-text-border-colour;
+}
+
+.govuk-heading-xl,
+.govuk-heading-l,
+.govuk-heading-m,
+.govuk-heading-s {
+  font-family: $govuk-font-family-headings;
+}
+
+.govuk-details__summary {
+  color: $govuk-details-summary-title-colour;
+  font-weight: 700;
+}
+
+.govuk-notification-banner {
+  border-color: $govuk-notification-banner-border;
+  background-color: $govuk-notification-banner-border;
+}
+
+.account-grid {
+  display: flex;
+  flex-wrap: wrap;
+
+  button {
+    margin-top: auto;
+  }
+
+}
+
+.account-grid-item {
+  display: flex;
+  flex-direction: column;
+  &:first-child{
+    padding-right: 20px;
+  }
+  &:not(:first-child ) {
+    padding-left: 20px;
+  }
+}
+
+.account-grid-item .heading-medium {
+  margin-top: 0
+}
+
+.account-grid-item p {
+  margin-bottom: 2em;
+  max-width: 390px
+}
+
+@media (min-width: 641px) {
+  .account-grid-item {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.account-grid-item--right {
+  margin-top: 3em
+}
+
+@media (min-width: 641px) {
+  .account-grid-item--right {
+    margin-top: 0;
+    border-left: 5px solid $govuk-canvas-background-colour;
+    position: relative;
+    //padding-left: 30px;
+  }
+
+  .account-grid-item--right .button-start {
+    position: absolute;
+    bottom: 0;
+    left: 38px
+  }
+
+  .account-grid-item--right .button-start:active {
+    top: auto;
+    bottom: -2px
+  }
+  .govuk-hint {
+    white-space: pre-wrap;
+  }
+}
+
+.govuk-tag--grey {
+  color: cid-shade($govuk-tag-grey, 50%);
+  background-color: cid-tint($govuk-tag-grey, 85%);
+}
+
+.govuk-tag--blue {
+  color: cid-shade($govuk-tag-blue, 60%);
+  background-color: cid-tint($govuk-tag-blue, 70%);
+}
+
+.govuk-tag--yellow {
+  color: cid-shade($govuk-tag-yellow, 65%);
+  background-color: cid-tint($govuk-tag-yellow, 75%);
+}
+
+.govuk-tag--green {
+  color: cid-shade($govuk-tag-green, 20%);
+  background-color: cid-tint($govuk-tag-green, 80%);
+}
+
+.govuk-default-button{
+  background-color: $govuk-button-background-colour ;
+  color: $govuk-button-text-colour;
+}
+
+.govuk-start-button{
+  background-color: $govuk-button-background-colour ;
+  color: $govuk-button-text-colour;
+  font-weight: bold;
+}
+
+.govuk-secondary-button{
+  background-color: $govuk-button-secondary-background-colour;
+  color: $govuk-button-secondary-text-colour;
+}
+
+.govuk-warning-button{
+  background-color: $govuk-button-warning-colour;
+  color: $govuk-button-text-colour;
+}
+
+.govuk-inverse-button{
+  background-color: $govuk-button-inverse-background-colour;
+  color: $govuk-button-inverse-text-colour;
+}
