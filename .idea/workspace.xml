@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="846f9fe8-3fb0-4c06-a059-884f9c534364" name="Changes" comment="Improved data fetching and handling">
+      <change afterPath="$PROJECT_DIR$/tests/unit/lib/helpers/data.test.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/4_Data.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/4_Data.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/content/documentation.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/public/content/documentation.mdx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Data.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Data.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/FacetSearch.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/FacetSearch.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/helpers/data.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/helpers/data.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/unit/components/Data.test.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/tests/unit/components/Data.test.tsx" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
+  </component>
+  <component name="ProjectId" id="2Ul2qYETETawdQByPcWAv2xEpXw" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ReactCreateComponentLastSelected&quot;: &quot;arrowFunctionComponent&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;full.screen.before.presentation.mode&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/chris/Projects/nhsbsa-showcase/public/theme/fonts&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs.jest.jest_package&quot;: &quot;/Users/chris/Projects/nhsbsa-showcase/node_modules/jest&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.fileTypes&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/chris/Projects/nhsbsa-showcase/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
+      &quot;MDX&quot;,
+      &quot;TypeScript JSX&quot;,
+      &quot;HTML&quot;,
+      &quot;TEXT&quot;
+    ]
+  }
+}</component>
+  <component name="ReactDesignerToolWindowState">
+    <option name="myId2Visible">
+      <map>
+        <entry key="com.haulmont.rcb.reactComponents" value="false" />
+        <entry key="com.haulmont.rcb.reactInspector" value="false" />
+      </map>
+    </option>
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/theme/fonts" />
+      <recent name="$PROJECT_DIR$/docs" />
+      <recent name="$PROJECT_DIR$/docs/components" />
+      <recent name="$PROJECT_DIR$/docs/data" />
+      <recent name="$PROJECT_DIR$/docs/theme" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$/docs/images" />
+      <recent name="$PROJECT_DIR$/docs/tools/assets" />
+      <recent name="$PROJECT_DIR$/docs" />
+      <recent name="$PROJECT_DIR$/docs/components" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Jest.ReadData Component">
+    <configuration name="ReadData Component" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="SUITE" />
+      <test-file value="$PROJECT_DIR$/tests/unit/components/Data.test.tsx" />
+      <test-names>
+        <test-name value="ReadData Component" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="filterData function" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="SUITE" />
+      <test-file value="$PROJECT_DIR$/tests/unit/lib/helpers/data.test.ts" />
+      <test-names>
+        <test-name value="filterData function" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="filterFields function" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="SUITE" />
+      <test-file value="$PROJECT_DIR$/tests/unit/lib/helpers/data.test.ts" />
+      <test-names>
+        <test-name value="filterFields function" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="filterFields function.should filter fields based on the provided list" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/tests/unit/lib/helpers/data.test.ts" />
+      <test-names>
+        <test-name value="filterFields function" />
+        <test-name value="should filter fields based on the provided list" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="filterFields function.should return the original data if fields is empty" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/tests/unit/lib/helpers/data.test.ts" />
+      <test-names>
+        <test-name value="filterFields function" />
+        <test-name value="should return the original data if fields is empty" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Jest.ReadData Component" />
+        <item itemvalue="Jest.filterFields function" />
+        <item itemvalue="Jest.filterData function" />
+        <item itemvalue="Jest.filterFields function.should filter fields based on the provided list" />
+        <item itemvalue="Jest.filterFields function.should return the original data if fields is empty" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ShelveChangesManager">
+    <option name="remove_strategy" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="846f9fe8-3fb0-4c06-a059-884f9c534364" name="Changes" comment="" />
+      <created>1693500037854</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1693500037854</updated>
+      <workItem from="1693500038874" duration="32000" />
+      <workItem from="1693500102513" duration="620000" />
+      <workItem from="1693556946532" duration="65128000" />
+      <workItem from="1693900390140" duration="95444000" />
+      <workItem from="1694257653382" duration="69930000" />
+      <workItem from="1694605779996" duration="131091000" />
+      <workItem from="1695401465933" duration="94023000" />
+      <workItem from="1695749520507" duration="20482000" />
+      <workItem from="1695827038187" duration="7057000" />
+      <workItem from="1695834171279" duration="1038000" />
+      <workItem from="1695835224871" duration="9186000" />
+      <workItem from="1695893827739" duration="8847000" />
+      <workItem from="1695906293069" duration="10638000" />
+      <workItem from="1695972130053" duration="75000" />
+      <workItem from="1695974586133" duration="21594000" />
+      <workItem from="1696248724724" duration="9729000" />
+      <workItem from="1696412688785" duration="19373000" />
+      <workItem from="1696501205498" duration="637000" />
+      <workItem from="1696501991428" duration="952000" />
+      <workItem from="1696502965059" duration="5986000" />
+      <workItem from="1696508974775" duration="776000" />
+      <workItem from="1696509768002" duration="291000" />
+      <workItem from="1696510077648" duration="43600000" />
+      <workItem from="1696610859222" duration="699000" />
+      <workItem from="1696611583331" duration="839000" />
+      <workItem from="1696613696827" duration="3698000" />
+      <workItem from="1696844877279" duration="54000" />
+      <workItem from="1696844951299" duration="46157000" />
+    </task>
+    <task id="LOCAL-00001" summary="Improved data fetching and handling">
+      <created>1695132234663</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1695132234663</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Improved data fetching and handling" />
+    <option name="LAST_COMMIT_MESSAGE" value="Improved data fetching and handling" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/nhsbsa_showcase$Image_component_renders_the_NextImage_component_with_priority_set_to_true.info" NAME="Image component.renders the NextImage component with priority set to true Coverage Results" MODIFIED="1696595725733" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
+</project>

@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SkipLink component matches the snapshot 1`] = `
+<DocumentFragment>
+  <a
+    class="govuk-skip-link"
+    href="#main-content"
+  >
+    Skip to content
+  </a>
+</DocumentFragment>
+`;
