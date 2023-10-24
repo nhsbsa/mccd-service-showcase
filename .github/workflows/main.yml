@@ -1,0 +1,27 @@
+name: Build and Test Next.js App
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Set Up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: "18.x"
+
+      - name: Install Dependencies
+        run: yarn install
+
+      - name: Run Unit Tests
+        run: yarn test
+
+      - name: Build Next.js App
+        run: yarn build
