@@ -1,0 +1,88 @@
+.nhsuk-warning-callout {
+  margin-bottom: 40px;
+  margin-top: 40px;
+  padding: 24px;
+  background-color: scale-color($govuk-warning-callout-colour,$lightness:90%);
+  color: #212b32;
+  border: 1px solid scale-color($govuk-warning-callout-colour,$lightness:70%);
+  padding-top: 0 !important
+}
+
+.nhsuk-warning-callout>*:first-child {
+  margin-top: 0
+}
+
+.nhsuk-warning-callout>*:last-child {
+  margin-bottom: 0
+}
+
+@media (min-width: 40.0625em) {
+  .nhsuk-warning-callout {
+    margin-bottom:48px
+  }
+}
+
+@media (min-width: 40.0625em) {
+  .nhsuk-warning-callout {
+    margin-top:48px
+  }
+}
+
+@media (min-width: 40.0625em) {
+  .nhsuk-warning-callout {
+    padding:32px
+  }
+}
+
+@media print {
+  .nhsuk-warning-callout {
+    border: 1px solid #212b32;
+    page-break-inside: avoid
+  }
+}
+
+.nhsuk-warning-callout__label {
+  font-family: $govuk-font-family;
+  font-size: 20px;
+  font-size: 1.25rem;
+  line-height: 1.4;
+  background-color: $govuk-warning-callout-colour;
+  color: #fff !important;
+  display: inline-block;
+  margin: 0 0 8px -33px;
+  padding: 8px 32px;
+  position: relative;
+  top: -16px
+}
+
+@media (min-width: 40.0625em) {
+  .nhsuk-warning-callout__label {
+    font-size:24px;
+    font-size: 1.5rem;
+    line-height: 1.33333
+  }
+}
+
+@media print {
+  .nhsuk-warning-callout__label {
+    font-size: 18pt;
+    line-height: 1.15
+  }
+}
+
+@media (max-width: 40.0525em) {
+  .nhsuk-warning-callout__label {
+    margin-left:-25px;
+    margin-right: 0;
+    padding: 8px 24px;
+    top: -8px
+  }
+}
+
+@media print {
+  .nhsuk-warning-callout__label {
+    background: none;
+    color: #212b32;
+    top: 0
+  }
+}
