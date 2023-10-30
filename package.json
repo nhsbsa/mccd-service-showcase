@@ -6,7 +6,7 @@
     "build": "next build",
     "build:static": "yarn clean && next build",
     "clean": "rm -rf .next build",
-    "dev": "next dev",
+    "dev": "next dev -p 3001",
     "lint": "next lint",
     "lint:md": "eslint public/**/*.mdx",
     "prepare": "husky install",
