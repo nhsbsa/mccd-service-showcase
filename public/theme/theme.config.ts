@@ -22,16 +22,6 @@ export const theme: ITheme = {
     yellow: ['Medium priority'],
   },
   headerMenu: [
-    {
-      content: 'Home',
-      title: 'Home',
-      link: '/',
-    },
-    {
-      content: 'Features',
-      title: 'All features of this project',
-      link: '/features',
-    },
   ],
   footerMenu: [
     {
@@ -40,8 +30,13 @@ export const theme: ITheme = {
       title: 'Get help creating content',
     },
     {
-      content: 'Documentation',
-      link: '/documentation',
+      content: 'Artefact archive',
+      link: '/artefact-archive',
+      title: 'Search the document archives',
+    },
+    {
+      content: 'Beta backlog',
+      link: '/beta-backlog',
       title: 'Search the document archives',
     },
   ],
