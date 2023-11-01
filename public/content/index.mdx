@@ -10,16 +10,61 @@ tags:
  - high value
 ---
 <GridRow>
-    <GridColumn width={'1/3'}>
-      ### Test heading
-      <Include path='SideMenu.md' />
+    <GridColumn width={'full'}>
+        <Heading caption='Alpha assessment' tag='h1'>Medical Certificate of Cause of Death (MCCD)</Heading>
+        <LeadParagraph>NHSBSA is working to improve the Medical Certificate of Cause of Death (MCCD) process. This is the process in which an attending practitioner (AP) records a</LeadParagraph>
     </GridColumn>
-    <GridColumn width={'2/3'}>
-        # NHS BSA & Hippo Digital
-        <LeadParagraph>NHSBSA is working to improve the Medical Certificate of Cause of Death (MCCD) process. This is the process in which an attending practitioner (AP) records a
-            person’s cause of death so that the death can then be registered, and a death certificate created.</LeadParagraph>
-        #### Self hosted video
-        <Video src={'/videos/video-1.mp4'} title={'test video'}/>
+</GridRow>
+<GridRow>
+    <GridColumn width={'full'}>
+        ## The work in numbers
+    </GridColumn>
+    <GridColumn width={'1/4'}>
+        ### Weeks in alpha
+        12
+    </GridColumn>
+    <GridColumn width={'1/4'}>
+        ### Users researched
+        43
+    </GridColumn>
+    <GridColumn width={'1/4'}>
+        ### Something else
+        43
+    </GridColumn>
+    <GridColumn width={'1/4'}>
+        ### Something else
+        43
+    </GridColumn>
+</GridRow>
+<GridRow>
+    <GridColumn width={'full'}>
         ---
+    </GridColumn>
+</GridRow>
+<GridRow>
+    <GridColumn width={'2/3'}>
+        ## What we've done in alpha
+        <Accordion>
+            <AccordionSection title={"How we've worked"}>
+                This is the content for how we've worked
+                * [The problem](/problem)
+            </AccordionSection>
+            <AccordionSection title={"Understanding the problem"} index={1}>
+                This is the content for understanding the problem
+                * [The problem](/problem)
+            </AccordionSection>
+            <AccordionSection title={'Validating our riskiest assumptions'} index={1}>
+                This is the content for riskiest assumptions
+                * [The problem](/problem)
+            </AccordionSection>
+        </Accordion>
+    </GridColumn>
+    <GridColumn width={'1/3'}>
+        ## &nbsp;
+        ### Outputs from alpha
+        * [Asset repository](/problem)  
+        Add a line here about what this is
+        * [Beta backlog](/problem)  
+        Add a line here about what this is
     </GridColumn>
 </GridRow>
