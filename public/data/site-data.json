@@ -16,31 +16,58 @@
   },
   {
     "slug": [
-      "data-test"
+      "artefact-archive"
     ],
-    "url": "/data-test",
-    "file": "public/content/data-test.mdx",
-    "title": "Data Test",
-    "tags": [
-      "Medium priority",
-      "High value"
-    ]
+    "url": "/artefact-archive",
+    "file": "public/content/artefact-archive.mdx",
+    "title": "Artefact archive",
+    "description": "Artefact archive"
   },
   {
     "slug": [
-      "documentation"
+      "assumptions",
+      "assumption-1"
     ],
-    "url": "/documentation",
-    "file": "public/content/documentation.mdx",
-    "title": "Documentation",
-    "description": "Documentation archive"
+    "url": "/assumptions/assumption-1",
+    "file": "public/content/assumptions/assumption-1.mdx",
+    "title": "NHS BSA Project | Hippo Digital",
+    "description": "The home page description"
   },
   {
     "slug": [
-      "features"
+      "assumptions",
+      "assumption-2"
     ],
-    "url": "/features",
-    "file": "public/content/features/index.mdx",
+    "url": "/assumptions/assumption-2",
+    "file": "public/content/assumptions/assumption-2.mdx",
+    "title": "NHS BSA Project | Hippo Digital",
+    "description": "The home page description"
+  },
+  {
+    "slug": [
+      "assumptions",
+      "assumption-3"
+    ],
+    "url": "/assumptions/assumption-3",
+    "file": "public/content/assumptions/assumption-3.mdx",
+    "title": "NHS BSA Project | Hippo Digital",
+    "description": "The home page description"
+  },
+  {
+    "slug": [
+      "beta"
+    ],
+    "url": "/beta",
+    "file": "public/content/beta/index.mdx",
+    "title": "NHS BSA Project | Hippo Digital",
+    "description": "The home page description"
+  },
+  {
+    "slug": [
+      "beta-backlog"
+    ],
+    "url": "/beta-backlog",
+    "file": "public/content/beta-backlog/index.mdx",
     "title": "Features",
     "description": "Features index page",
     "priority": null,
@@ -52,11 +79,11 @@
   },
   {
     "slug": [
-      "features",
+      "beta-backlog",
       "01"
     ],
-    "url": "/features/01",
-    "file": "public/content/features/01.mdx",
+    "url": "/beta-backlog/01",
+    "file": "public/content/beta-backlog/01.mdx",
     "title": "01. Pull data into one place",
     "description": "Collating all data into a single point of reference",
     "priority": "later",
@@ -70,11 +97,11 @@
   },
   {
     "slug": [
-      "features",
+      "beta-backlog",
       "02"
     ],
-    "url": "/features/02",
-    "file": "public/content/features/02.mdx",
+    "url": "/beta-backlog/02",
+    "file": "public/content/beta-backlog/02.mdx",
     "title": "02 Title",
     "description": "Collating all data into a single point of reference",
     "priority": "next",
@@ -89,11 +116,11 @@
   },
   {
     "slug": [
-      "features",
+      "beta-backlog",
       "03"
     ],
-    "url": "/features/03",
-    "file": "public/content/features/03.mdx",
+    "url": "/beta-backlog/03",
+    "file": "public/content/beta-backlog/03.mdx",
     "title": "03 Title",
     "description": "Collating all data into a single point of reference",
     "priority": "next",
@@ -108,11 +135,11 @@
   },
   {
     "slug": [
-      "features",
+      "beta-backlog",
       "04"
     ],
-    "url": "/features/04",
-    "file": "public/content/features/04.mdx",
+    "url": "/beta-backlog/04",
+    "file": "public/content/beta-backlog/04.mdx",
     "title": "04 Title",
     "description": "Collating all data into a single point of reference",
     "priority": "Now",
@@ -127,11 +154,11 @@
   },
   {
     "slug": [
-      "features",
+      "beta-backlog",
       "05"
     ],
-    "url": "/features/05",
-    "file": "public/content/features/05.mdx",
+    "url": "/beta-backlog/05",
+    "file": "public/content/beta-backlog/05.mdx",
     "title": "05 Title",
     "description": "Collating all data into a single point of reference",
     "priority": "now",
@@ -146,6 +173,18 @@
   },
   {
     "slug": [
+      "data-test"
+    ],
+    "url": "/data-test",
+    "file": "public/content/data-test.mdx",
+    "title": "Data Test",
+    "tags": [
+      "Medium priority",
+      "High value"
+    ]
+  },
+  {
+    "slug": [
       "how-we-started"
     ],
     "url": "/how-we-started",
@@ -154,6 +193,26 @@
     "tags": [
       "High priority"
     ]
+  },
+  {
+    "slug": [
+      "how-we-worked",
+      "team"
+    ],
+    "url": "/how-we-worked/team",
+    "file": "public/content/how-we-worked/team.mdx",
+    "title": "NHS BSA Project | Hippo Digital",
+    "description": "The home page description"
+  },
+  {
+    "slug": [
+      "how-we-worked",
+      "ways-of-working"
+    ],
+    "url": "/how-we-worked/ways-of-working",
+    "file": "public/content/how-we-worked/ways-of-working.mdx",
+    "title": "NHS BSA Project | Hippo Digital",
+    "description": "The page description"
   },
   {
     "slug": [
@@ -178,46 +237,22 @@
   },
   {
     "slug": [
+      "understanding",
+      "our-approach"
+    ],
+    "url": "/understanding/our-approach",
+    "file": "public/content/understanding/our-approach.mdx",
+    "title": "NHS BSA Project | Hippo Digital",
+    "description": "The home page description"
+  },
+  {
+    "slug": [
+      "understanding",
       "problem"
     ],
-    "url": "/problem",
-    "file": "public/content/problem/index.mdx",
+    "url": "/understanding/problem",
+    "file": "public/content/understanding/problem.mdx",
     "title": "NHS BSA Project | Hippo Digital",
     "description": "The home page description"
-  },
-  {
-    "slug": [
-      "response"
-    ],
-    "url": "/response",
-    "file": "public/content/response/index.mdx",
-    "title": "NHS BSA Project | Hippo Digital",
-    "description": "The home page description"
-  },
-  {
-    "slug": [
-      "test"
-    ],
-    "url": "/test",
-    "file": "public/content/test/index.mdx"
-  },
-  {
-    "slug": [
-      "test",
-      "test-2"
-    ],
-    "url": "/test/test-2",
-    "file": "public/content/test/test-2/index.mdx"
-  },
-  {
-    "slug": [
-      "test",
-      "test-2",
-      "test-3"
-    ],
-    "url": "/test/test-2/test-3",
-    "file": "public/content/test/test-2/test-3/index.mdx",
-    "title": "Test 3",
-    "description": "Test 3 description"
   }
 ]
