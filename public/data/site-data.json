@@ -196,26 +196,6 @@
   },
   {
     "slug": [
-      "how-we-worked",
-      "team"
-    ],
-    "url": "/how-we-worked/team",
-    "file": "public/content/how-we-worked/team.mdx",
-    "title": "NHS BSA Project | Hippo Digital",
-    "description": "The home page description"
-  },
-  {
-    "slug": [
-      "how-we-worked",
-      "ways-of-working"
-    ],
-    "url": "/how-we-worked/ways-of-working",
-    "file": "public/content/how-we-worked/ways-of-working.mdx",
-    "title": "NHS BSA Project | Hippo Digital",
-    "description": "The page description"
-  },
-  {
-    "slug": [
       "kitchen-sink"
     ],
     "url": "/kitchen-sink",
@@ -254,5 +234,25 @@
     "file": "public/content/understanding/problem.mdx",
     "title": "NHS BSA Project | Hippo Digital",
     "description": "The home page description"
+  },
+  {
+    "slug": [
+      "understanding",
+      "team"
+    ],
+    "url": "/understanding/team",
+    "file": "public/content/understanding/team.mdx",
+    "title": "NHS BSA Project | Hippo Digital",
+    "description": "The home page description"
+  },
+  {
+    "slug": [
+      "understanding",
+      "ways-of-working"
+    ],
+    "url": "/understanding/ways-of-working",
+    "file": "public/content/understanding/ways-of-working.mdx",
+    "title": "NHS BSA Project | Hippo Digital",
+    "description": "The page description"
   }
 ]
