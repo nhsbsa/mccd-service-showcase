@@ -1,8 +1,8 @@
 import { ITheme } from '@/types';
 
 export const theme: ITheme = {
-  pageTitlePostfix: 'Hippo Digital',
-  name: 'Medical certificate of cause of death',
+  pageTitlePostfix: 'NHS Business Service Authority',
+  name: 'Medical Certificate of Cause of Death (MCCD)',
   serviceName: '',
   logo: {
     src: '/theme/images/hippo-data-logo.webp',
@@ -25,19 +25,19 @@ export const theme: ITheme = {
   ],
   footerMenu: [
     {
-      content: 'Kitchen sink',
-      link: '/kitchen-sink',
-      title: 'Get help creating content',
-    },
-    {
       content: 'Artefact archive',
       link: '/artefact-archive',
-      title: 'Search the document archives',
+      title: 'Search the artefact archives',
     },
     {
       content: 'Beta backlog',
       link: '/beta-backlog',
-      title: 'Search the document archives',
+      title: 'Explore the beta backlog',
+    },
+    {
+      content: 'Kitchen sink',
+      link: '/kitchen-sink',
+      title: 'View components available for this showcase site',
     },
   ],
 };
