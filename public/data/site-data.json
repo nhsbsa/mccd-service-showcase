@@ -16,6 +16,36 @@
   },
   {
     "slug": [
+      "approach",
+      "concept"
+    ],
+    "url": "/approach/concept",
+    "file": "public/content/approach/concept.mdx",
+    "title": "NHS BSA Project | Hippo Digital",
+    "description": "The page description"
+  },
+  {
+    "slug": [
+      "approach",
+      "team-and-wow"
+    ],
+    "url": "/approach/team-and-wow",
+    "file": "public/content/approach/team-and-wow.mdx",
+    "title": "NHS BSA Project | Hippo Digital",
+    "description": "The home page description"
+  },
+  {
+    "slug": [
+      "approach",
+      "technical"
+    ],
+    "url": "/approach/technical",
+    "file": "public/content/approach/technical.mdx",
+    "title": "NHS BSA Project | Hippo Digital",
+    "description": "The page description"
+  },
+  {
+    "slug": [
       "artefact-archive"
     ],
     "url": "/artefact-archive",
@@ -218,10 +248,10 @@
   {
     "slug": [
       "understanding",
-      "our-approach"
+      "as-is"
     ],
-    "url": "/understanding/our-approach",
-    "file": "public/content/understanding/our-approach.mdx",
+    "url": "/understanding/as-is",
+    "file": "public/content/understanding/as-is.mdx",
     "title": "NHS BSA Project | Hippo Digital",
     "description": "The home page description"
   },
@@ -238,21 +268,11 @@
   {
     "slug": [
       "understanding",
-      "team"
+      "users"
     ],
-    "url": "/understanding/team",
-    "file": "public/content/understanding/team.mdx",
+    "url": "/understanding/users",
+    "file": "public/content/understanding/users.mdx",
     "title": "NHS BSA Project | Hippo Digital",
     "description": "The home page description"
-  },
-  {
-    "slug": [
-      "understanding",
-      "ways-of-working"
-    ],
-    "url": "/understanding/ways-of-working",
-    "file": "public/content/understanding/ways-of-working.mdx",
-    "title": "NHS BSA Project | Hippo Digital",
-    "description": "The page description"
   }
 ]
