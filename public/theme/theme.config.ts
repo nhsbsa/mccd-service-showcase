@@ -25,6 +25,11 @@ export const theme: ITheme = {
   ],
   footerMenu: [
     {
+      content: 'Alpha overview',
+      link: '/',
+      title: 'Showcase start page',
+    },
+    {
       content: 'Artefact archive',
       link: '/artefact-archive',
       title: 'Search the artefact archives',
@@ -33,11 +38,6 @@ export const theme: ITheme = {
       content: 'Beta backlog',
       link: '/beta-backlog',
       title: 'Explore the beta backlog',
-    },
-    {
-      content: 'Kitchen sink',
-      link: '/kitchen-sink',
-      title: 'View components available for this showcase site',
     },
   ],
 };
