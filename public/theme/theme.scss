@@ -56,6 +56,10 @@ $govuk-summary-card-title-background: $govuk-canvas-background-colour;
 //$govuk-tag-grey: #505a5f;
 //$govuk-tag-blue: #1d70b8;
 
+html {
+  scroll-behavior: smooth;
+}
+
 .govuk-header {
   position: relative;
   margin-bottom: 40px;
@@ -65,5 +69,40 @@ $govuk-summary-card-title-background: $govuk-canvas-background-colour;
 @media (min-width: 40.0625em) {
   p, .govuk-body, .govuk-body-m {
     line-height: 1.5 !important;
+  }
+}
+
+/* SITEWIDE COMPONENTS */
+
+div.page-intro {
+  margin-bottom: 50px;
+  border-bottom: 1px solid #ececec;
+}
+
+nav.in-page-nav {
+  h4 {
+    margin-bottom: 0.5rem;
+    font-size: 16px;
+  }
+
+  ul {
+    margin-bottom: 0;
+  }
+}
+
+a.signpost {
+  display: block;
+  margin-bottom: 20px;
+  border: 1px solid #ececec;
+  border-radius: 4px;
+  padding: 1rem;
+  
+  &:hover {
+    border: 1px solid #cccccc;
+    background-color: #ececec;
+  }
+
+  p {
+    margin-bottom: 0;
   }
 }
