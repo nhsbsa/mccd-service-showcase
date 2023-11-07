@@ -16,6 +16,36 @@
   },
   {
     "slug": [
+      "approach",
+      "concept"
+    ],
+    "url": "/approach/concept",
+    "file": "public/content/approach/concept.mdx",
+    "title": "NHS BSA Project | Hippo Digital",
+    "description": "The page description"
+  },
+  {
+    "slug": [
+      "approach",
+      "team-and-wow"
+    ],
+    "url": "/approach/team-and-wow",
+    "file": "public/content/approach/team-and-wow.mdx",
+    "title": "NHS BSA Project | Hippo Digital",
+    "description": "The home page description"
+  },
+  {
+    "slug": [
+      "approach",
+      "technical"
+    ],
+    "url": "/approach/technical",
+    "file": "public/content/approach/technical.mdx",
+    "title": "NHS BSA Project | Hippo Digital",
+    "description": "The page description"
+  },
+  {
+    "slug": [
       "artefact-archive"
     ],
     "url": "/artefact-archive",
@@ -196,26 +226,6 @@
   },
   {
     "slug": [
-      "how-we-worked",
-      "team"
-    ],
-    "url": "/how-we-worked/team",
-    "file": "public/content/how-we-worked/team.mdx",
-    "title": "NHS BSA Project | Hippo Digital",
-    "description": "The home page description"
-  },
-  {
-    "slug": [
-      "how-we-worked",
-      "ways-of-working"
-    ],
-    "url": "/how-we-worked/ways-of-working",
-    "file": "public/content/how-we-worked/ways-of-working.mdx",
-    "title": "NHS BSA Project | Hippo Digital",
-    "description": "The page description"
-  },
-  {
-    "slug": [
       "kitchen-sink"
     ],
     "url": "/kitchen-sink",
@@ -238,10 +248,10 @@
   {
     "slug": [
       "understanding",
-      "our-approach"
+      "as-is"
     ],
-    "url": "/understanding/our-approach",
-    "file": "public/content/understanding/our-approach.mdx",
+    "url": "/understanding/as-is",
+    "file": "public/content/understanding/as-is.mdx",
     "title": "NHS BSA Project | Hippo Digital",
     "description": "The home page description"
   },
@@ -252,6 +262,16 @@
     ],
     "url": "/understanding/problem",
     "file": "public/content/understanding/problem.mdx",
+    "title": "NHS BSA Project | Hippo Digital",
+    "description": "The home page description"
+  },
+  {
+    "slug": [
+      "understanding",
+      "users"
+    ],
+    "url": "/understanding/users",
+    "file": "public/content/understanding/users.mdx",
     "title": "NHS BSA Project | Hippo Digital",
     "description": "The home page description"
   }
