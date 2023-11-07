@@ -5,7 +5,23 @@ description: The home page description
 
 <Heading caption='Understanding the problem' tag='h1'>Our research approach</Heading>
 
-#### @todo: Add in-page nav here
+<GridRow>
+    <GridColumn width={'2/3'}>
+        <LeadParagraph>
+            Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
+        </LeadParagraph>
+    </GridColumn>
+    <GridColumn width={'1/3'}>
+        <nav class="in-page-nav">
+            #### On this page
+            * [Research approach](#research-approach)
+            * [Research methods](#research-methods)
+        </nav>
+    </GridColumn>
+    <GridColumn width={'full'}>
+        <hr class="govuk-section-break govuk-section-break--l"/>
+    </GridColumn>
+</GridRow>
 
 <GridRow>
     <GridColumn width={'3/4'}>
@@ -14,7 +30,18 @@ description: The home page description
 
         ### Recruiting diverse participants
 
-        TBC
+        We invited a diverse range of people involved within the MCCD process, to participate in a panel survey.
+
+        Using some of the 400 people that contributed to the survey, we have run:
+
+        * journey mapping workshops (8 sessions with 26 participants)
+        * interviews (29 sessions)
+        * usability testing (20 sessions)
+        * concept testing (18 sessions)
+
+        From these research sessions we were able to gain an understanding of our users and the current paper MCCD workflow and test our riskiest assumptions.
+
+        In these sessions and future sessions, it is anticipated that between 83-93 participants will be involved in workshops, testing and interviews.
 
         ### Survey panel
 
@@ -65,9 +92,9 @@ description: The home page description
         &nbsp;
     </GridColumn>
     <GridColumn width={'1/2'}>
-        <InsetText>
-            ### Understanding the problem
-            [Our users and their needs](/understanding/users)
-        </InsetText>
+        <a class="next-page" href="/understanding/users">
+            #### Understanding the problem
+            Next: <span>Our users and their needs</span>
+        </a>
     </GridColumn>
 </GridRow>

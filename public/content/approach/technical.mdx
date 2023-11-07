@@ -5,13 +5,37 @@ description: The page description
 
 <Heading caption='Our approach' tag='h1'>Technical overview</Heading>
 
-## Expected technical architecture
+<GridRow>
+    <GridColumn width={'2/3'}>
+        <LeadParagraph>
+            Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
+        </LeadParagraph>
+    </GridColumn>
+    <GridColumn width={'1/3'}>
+        <nav class="in-page-nav">
+            #### On this page
+            * [Section 1](#section-1)
+            * [Section 2](#section-2)
+        </nav>
+    </GridColumn>
+    <GridColumn width={'full'}>
+        <hr class="govuk-section-break govuk-section-break--l"/>
+    </GridColumn>
+</GridRow>
 
-Cras justo odio, dapibus ac facilisis in, egestas eget quam. Aenean lacinia bibendum nulla sed consectetur. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Aenean lacinia bibendum nulla sed consectetur. Curabitur blandit tempus porttitor.
+<GridRow>
+    <GridColumn width={'3/4'}>
 
-## Integration considerations
+        ## Expected technical architecture
 
-Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cras justo odio, dapibus ac facilisis in, egestas eget quam.
+        Cras justo odio, dapibus ac facilisis in, egestas eget quam. Aenean lacinia bibendum nulla sed consectetur. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Aenean lacinia bibendum nulla sed consectetur. Curabitur blandit tempus porttitor.
+
+        ## Integration considerations
+
+        Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cras justo odio, dapibus ac facilisis in, egestas eget quam.
+
+    </GridColumn>
+</GridRow>
 
 <GridRow>
     <GridColumn width={'full'}>
@@ -23,9 +47,9 @@ Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. C
         &nbsp;
     </GridColumn>
     <GridColumn width={'1/2'}>
-        <InsetText>
-            ### Our approach
-            [Initial concept](/approach/concept)
-        </InsetText>
+        <a class="next-page" href="/approach/design">
+            #### Our approach
+            Next: <span>Design overview</span>
+        </a>
     </GridColumn>
 </GridRow>

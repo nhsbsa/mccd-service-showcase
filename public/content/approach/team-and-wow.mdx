@@ -5,13 +5,37 @@ description: The home page description
 
 <Heading caption='Our approach' tag='h1'>How we worked</Heading>
 
-## Team shape and structure
+<GridRow>
+    <GridColumn width={'2/3'}>
+        <LeadParagraph>
+            Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
+        </LeadParagraph>
+    </GridColumn>
+    <GridColumn width={'1/3'}>
+        <nav class="in-page-nav">
+            #### On this page
+            * [Section 1](#section-1)
+            * [Section 2](#section-2)
+        </nav>
+    </GridColumn>
+    <GridColumn width={'full'}>
+        <hr class="govuk-section-break govuk-section-break--l"/>
+    </GridColumn>
+</GridRow>
 
-Etiam porta sem malesuada magna mollis euismod. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec sed odio dui. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Nulla vitae elit libero, a pharetra augue.
+<GridRow>
+    <GridColumn width={'3/4'}>
 
-## Ways of working
+        ## Team shape and structure
 
-Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.
+        Etiam porta sem malesuada magna mollis euismod. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec sed odio dui. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Nulla vitae elit libero, a pharetra augue.
+
+        ## Ways of working
+
+        Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.
+
+    </GridColumn>
+</GridRow>
 
 <GridRow>
     <GridColumn width={'full'}>
@@ -23,9 +47,9 @@ Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut ferm
         &nbsp;
     </GridColumn>
     <GridColumn width={'1/2'}>
-        <InsetText>
-            ### Our approach
-            [Technical overview](/approach/technical)
-        </InsetText>
+        <a class="next-page" href="/approach/technical">
+            #### Our approach
+            Next: <span>Technical overview</span>
+        </a>
     </GridColumn>
 </GridRow>

@@ -5,9 +5,9 @@ export const theme: ITheme = {
   name: 'Medical Certificate of Cause of Death (MCCD)',
   serviceName: '',
   logo: {
-    src: '/theme/images/hippo-data-logo.webp',
-    height: 70,
-    width: 282,
+    src: '/theme/images/logo.svg',
+    height: 48,
+    width: 200,
     alt: 'NHSBSA.',
   },
   tagsColours: {
@@ -25,6 +25,11 @@ export const theme: ITheme = {
   ],
   footerMenu: [
     {
+      content: 'Alpha overview',
+      link: '/',
+      title: 'Showcase start page',
+    },
+    {
       content: 'Artefact archive',
       link: '/artefact-archive',
       title: 'Search the artefact archives',
@@ -33,11 +38,6 @@ export const theme: ITheme = {
       content: 'Beta backlog',
       link: '/beta-backlog',
       title: 'Explore the beta backlog',
-    },
-    {
-      content: 'Kitchen sink',
-      link: '/kitchen-sink',
-      title: 'View components available for this showcase site',
     },
   ],
 };

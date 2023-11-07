@@ -5,7 +5,31 @@ description: The home page description
 
 <Heading caption='Challenging our riskiest assumptions' tag='h1'>Assumption 3</Heading>
 
-<p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Donec id elit non mi porta gravida at eget metus. Cras mattis consectetur purus sit amet fermentum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+<GridRow>
+    <GridColumn width={'2/3'}>
+        <LeadParagraph>
+            Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
+        </LeadParagraph>
+    </GridColumn>
+    <GridColumn width={'1/3'}>
+        <nav class="in-page-nav">
+            #### On this page
+            * [Section 1](#section-1)
+            * [Section 2](#section-2)
+        </nav>
+    </GridColumn>
+    <GridColumn width={'full'}>
+        <hr class="govuk-section-break govuk-section-break--l"/>
+    </GridColumn>
+</GridRow>
+
+<GridRow>
+    <GridColumn width={'3/4'}>
+
+        <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Donec id elit non mi porta gravida at eget metus. Cras mattis consectetur purus sit amet fermentum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+
+    </GridColumn>
+</GridRow>
 
 <GridRow>
     <GridColumn width={'full'}>
@@ -17,9 +41,9 @@ description: The home page description
         &nbsp;
     </GridColumn>
     <GridColumn width={'1/2'}>
-        <InsetText>
-            ### Looking ahead to beta
-            [Beta](/beta/)
-        </InsetText>
+        <a class="next-page" href="/beta/">
+            #### Looking ahead to beta
+            Next: <span>Beta</span>
+        </a>
     </GridColumn>
 </GridRow>

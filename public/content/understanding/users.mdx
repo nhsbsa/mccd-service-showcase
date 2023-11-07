@@ -5,7 +5,24 @@ description: The home page description
 
 <Heading caption='Understanding the problem' tag='h1'>Our users and their needs</Heading>
 
-#### @todo: Add in-page nav here
+<GridRow>
+    <GridColumn width={'2/3'}>
+        <LeadParagraph>
+            Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
+        </LeadParagraph>
+    </GridColumn>
+    <GridColumn width={'1/3'}>
+        <nav class="in-page-nav">
+            #### On this page
+            * [User needs](#user-needs)
+            * [MCCD user profiles](#mccd-user-profiles)
+            * [Research participants](#research-participants)
+        </nav>
+    </GridColumn>
+    <GridColumn width={'full'}>
+        <hr class="govuk-section-break govuk-section-break--l"/>
+    </GridColumn>
+</GridRow>
 
 <GridRow>
     <GridColumn width={'3/4'}>
@@ -235,9 +252,9 @@ description: The home page description
         &nbsp;
     </GridColumn>
     <GridColumn width={'1/2'}>
-        <InsetText>
-            ### Understanding the problem
-            [The 'as is'](/understanding/as-is)
-        </InsetText>
+        <a class="next-page" href="/understanding/as-is">
+            #### Understanding the problem
+            Next: <span>The 'as is'</span>
+        </a>
     </GridColumn>
 </GridRow>

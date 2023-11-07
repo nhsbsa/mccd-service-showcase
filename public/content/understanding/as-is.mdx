@@ -5,9 +5,31 @@ description: The home page description
 
 <Heading caption='Understanding the problem' tag='h1'>The 'as is'</Heading>
 
-* Metrics about current situ
-* Analysis
-* As-is blueprint
+<GridRow>
+    <GridColumn width={'2/3'}>
+        <LeadParagraph>
+            Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
+        </LeadParagraph>
+    </GridColumn>
+    <GridColumn width={'1/3'}>
+        <nav class="in-page-nav">
+            #### On this page
+            * [Section 1](#section-1)
+            * [Section 2](#section-2)
+        </nav>
+    </GridColumn>
+    <GridColumn width={'full'}>
+        <hr class="govuk-section-break govuk-section-break--l"/>
+    </GridColumn>
+</GridRow>
+
+<GridRow>
+    <GridColumn width={'3/4'}>
+        * Metrics about current situ
+        * Analysis
+        * As-is blueprint
+    </GridColumn>
+</GridRow>
 
 <GridRow>
     <GridColumn width={'full'}>
@@ -19,9 +41,9 @@ description: The home page description
         &nbsp;
     </GridColumn>
     <GridColumn width={'1/2'}>
-        <InsetText>
-            ### Our approach
-            [Team shape and ways of working](/approach/team-and-wow)
-        </InsetText>
+        <a class="next-page" href="/approach/team-and-wow">
+            #### Our approach
+            Next: <span>Team shape and ways of working</span>
+        </a>
     </GridColumn>
 </GridRow>
