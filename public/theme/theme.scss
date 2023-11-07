@@ -60,10 +60,11 @@ html {
   scroll-behavior: smooth;
 }
 
-.govuk-header {
-  position: relative;
-  margin-bottom: 40px;
-  border-bottom: 1px solid #e0e0e0;
+.govuk-header__link, .govuk-header__link--homepage {
+  &:hover {
+    border-color: transparent !important;
+    text-decoration: none !important;
+  }
 }
 
 @media (min-width: 40.0625em) {

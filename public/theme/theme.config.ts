@@ -5,9 +5,9 @@ export const theme: ITheme = {
   name: 'Medical Certificate of Cause of Death (MCCD)',
   serviceName: '',
   logo: {
-    src: '/theme/images/hippo-data-logo.webp',
-    height: 70,
-    width: 282,
+    src: '/theme/images/logo.svg',
+    height: 48,
+    width: 200,
     alt: 'NHSBSA.',
   },
   tagsColours: {
