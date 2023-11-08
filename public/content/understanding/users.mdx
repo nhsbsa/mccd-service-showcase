@@ -12,7 +12,7 @@ description: The home page description
         </LeadParagraph>
     </GridColumn>
     <GridColumn width={'1/3'}>
-        <nav class="in-page-nav">
+        <nav className="in-page-nav">
             #### On this page
             * [User needs](#user-needs)
             * [MCCD user profiles](#mccd-user-profiles)
@@ -20,7 +20,7 @@ description: The home page description
         </nav>
     </GridColumn>
     <GridColumn width={'full'}>
-        <hr class="govuk-section-break govuk-section-break--l"/>
+        <hr className="govuk-section-break govuk-section-break--l"/>
     </GridColumn>
 </GridRow>
 
@@ -35,7 +35,7 @@ description: The home page description
                 <TableCell>Description</TableCell>
             </TableHeader>
             <TableRow>
-                <TableCell>Accuracy</TableCell>
+                <TableCell width="33%">Accuracy</TableCell>
                 <TableCell>As someone with a role to play in death registration, I need the MCCD to be accurate to support efficient, legal management of cases and enable safe and swift funerals</TableCell>
             </TableRow>
             <TableRow>
@@ -78,31 +78,15 @@ description: The home page description
 
         ## MCCD user profiles
 
-        <Table caption="Medical Examiner Officer (MEO)">
+        ### Attending Practitioner (AP)
+
+        <Table>
             <TableHeader>
                 <TableCell>Role summary</TableCell>
                 <TableCell>User needs</TableCell>
             </TableHeader>
             <TableRow>
-                <TableCell>
-                    Usually hospital-based, often within a Bereavement Office. MEOs often notify hospital-based APs that a patient has died and that an MCCD is due. They play a crucial role in supporting hospital-based APs to complete the MCCD, checking for errors, omissions or unacceptable responses, before sending MCCDs to the LRS. They liaise with the bereaved, gathering information, discussing the cause of death with them and letting them know when they can register the death.
-                </TableCell>
-                <TableCell>
-                    * access to the patient notes, so that I can complete the pre-scrutiny and contact the next of kin.
-                    * to know when an AP has completed an MCCD, so I can check it and send it to the registrars.
-                    * to be able to view the final MCCD so that I can make certain the COD is what has been agreed, before it is sent to the registrar.
-                    * to be able to contact the AP so that issues can be resolved and the MCCD completed without delays for bereaved to register the death.
-                </TableCell>
-            </TableRow>
-        </Table>
-        
-        <Table caption="Hospital-based Attending Practitioner (AP)">
-            <TableHeader>
-                <TableCell>Role summary</TableCell>
-                <TableCell>User needs</TableCell>
-            </TableHeader>
-            <TableRow>
-                <TableCell>
+                <TableCell width="50%">
                     Hospital-based APs are doctors who were responsible for the deceased's care, who assume responsibility for completing the MCCD. They work in both NHS and private settings and range from junior doctors to consultants. APs attend the bereavement office where the MCCD books are held, to complete the MCCD. MEOs/bereavement officers, provide support, particularly for less experienced APs. Completing the MCCD is one of many responsibilities and must be prioritised along with other tasks. These APs work under constant pressure, often on long shifts/during evenings, engaged in emotionally demanding work. Experienced AP can also work as Medical Examiners.
                 </TableCell>
                 <TableCell>
@@ -114,29 +98,36 @@ description: The home page description
                 </TableCell>
             </TableRow>
         </Table>
-        
-        <Table caption="GP Attending Practitioner (AP)">
+
+        <InsetText>
+            During the research, we discovered common variations to the AP role.
+            <Details title={'Different types of AP'}>
+                #### Neonatology, specialist or consultant led services​  
+                The cause of death is often discussed/agreed amongst the clinical care team and a consultant or senior doctor completes the MCCD
+                
+                #### Hospital-based APs​
+                APs attend the bereavement office where the MCCD books are held, to complete the MCCD. MEOs/bereavement officers, provide support to all AP, but particularly for less experienced APs.
+                
+                #### Less experienced MCCD completers​
+                In some settings, such as medical wards or hospices, the MCCD may be more often completed by junior doctors. Junior doctors receive little training in MCCD completion so seek advice from their senior colleagues and receive support from the MEOs/bereavement office during completion. Experienced doctors working in areas with lower mortality rates may also have less MCCD experience and need support​
+                
+                #### APs in private settings​
+                May not have access to NHS systems or email credentials​
+                
+                #### General Practitioners (GPs)​
+                Often work part-time and may undertake some work at home. They are usually notified that an MCCD is needed by their reception team. Staff working patterns/absences and patients often being seen by only one doctor, or in some cases no doctor, can mean that there can be no one to act as AP. For anticipated deaths, practices mitigate potential delays by having another doctor see the patient in-person or remotely. If a patient dies whilst a doctor is away, some will come into their practice where the MCCD book is held, to complete the MCCD so there are no delays.​
+            </Details>
+        </InsetText>
+
+        ### Medical Examiner (ME)
+
+        <Table>
             <TableHeader>
                 <TableCell>Role summary</TableCell>
                 <TableCell>User needs</TableCell>
             </TableHeader>
             <TableRow>
-                <TableCell>
-                    GPs act as APs, assuming responsibility for completing the MCCD when a patient in their care dies, if they have seen them in the last 28 days. GPs often work part-time and may undertake some work at home. They are usually notified that an MCCD is needed by their reception team. Staff working patterns/absences and patients often being seen by only one doctor, or in some cases no doctor, can mean that there can be no one to act as AP. Practices try to mitigate potential delays due to staff leave by having another doctor see the patient inperson or remotely.
-                </TableCell>
-                <TableCell>
-                    * Needs
-                </TableCell>
-            </TableRow>
-        </Table>
-        
-        <Table caption="Medical Examiner (ME)">
-            <TableHeader>
-                <TableCell>Role summary</TableCell>
-                <TableCell>User needs</TableCell>
-            </TableHeader>
-            <TableRow>
-                <TableCell>
+                <TableCell width="50%">
                     MEs are usually doctors in more senior roles, with 5 years experience post-qualification. They may simultaneously hold a clinical position as a GP or hospital AP. Their role as an ME is to independently decide the causes of death of those who died in the hospital or the community and compare this to what the AP has proposed. This process is called "scrutinising". This is key in facilitating the completion of accurate MCCDs; improving patient safety and identifying malpractice.
                 </TableCell>
                 <TableCell>
@@ -149,14 +140,16 @@ description: The home page description
                 </TableCell>
             </TableRow>
         </Table>
-        
-        <Table caption="Registrar">
+
+        ### Registrar
+
+        <Table>
             <TableHeader>
                 <TableCell>Role summary</TableCell>
                 <TableCell>User needs</TableCell>
             </TableHeader>
             <TableRow>
-                <TableCell>
+                <TableCell width="50%">
                     Based within a Local Registry Service (LRS). Registrars receive an MCCD in advance direct from the MEO, or at the time of the death registration appointment directly from the informant. They check the MCCD for any errors, omissions or unacceptable responses which would prevent the death from being registered. If they encounter any issues, they will contact the MEO and return the MCCD to the AP for amendments. Once the MCCD is acceptable, they can work with the informant to register the death.
                 </TableCell>
                 <TableCell>
@@ -166,18 +159,22 @@ description: The home page description
                 </TableCell>
             </TableRow>
         </Table>
-        
-        <Table caption="Informant">
+
+        ### Informant
+
+        <Table>
             <TableHeader>
                 <TableCell>Role summary</TableCell>
                 <TableCell>User needs</TableCell>
             </TableHeader>
             <TableRow>
-                <TableCell>
-                    Role
+                <TableCell width="50%">
+                    The informant is the individual responsible for registering a death. They are usually a close relative or friend of the deceased. In some cases, individuals may have registered a death before, for others, it is a new experience. Informants may receive advice from health professionals, administrative staff, funeral directors, religious associations and family/friends about what to do. Often when informants are given the MCCD, they will read this before attending the registry office. Whether the death was expected or unexpected, during this period of acute grief, processing the situation and what needs to be organised is all consuming and those in this situation find it hard to take in information. At such times, having physical information is valued. When the deceased was of a particular faith or if relations are only available for a defined period, there may be increased urgency to complete registration and funeral.
                 </TableCell>
                 <TableCell>
-                    * Needs
+                    * I need an opportunity to know the COD so that I understand what has happened and feel the COD reflects the truth​
+                    * I need clear, succinct information, about what I need to do, so that I can adequately process the information and understand what I need to do​
+                    * I need to be able to register the death in a time frame that allows me to observe any religious requirements or practical constraints, so that I can arrange an acceptable funeral​
                 </TableCell>
             </TableRow>
         </Table>
@@ -252,7 +249,7 @@ description: The home page description
         &nbsp;
     </GridColumn>
     <GridColumn width={'1/2'}>
-        <a class="next-page" href="/understanding/as-is">
+        <a className="next-page" href="/understanding/as-is">
             #### Understanding the problem
             Next: <span>The 'as is'</span>
         </a>
