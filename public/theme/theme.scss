@@ -71,6 +71,10 @@ html {
     border-color: transparent !important;
     text-decoration: none !important;
   }
+  &:focus {
+    background-color: transparent !important;
+    box-shadow: none !important;
+  }
 }
 
 @media (min-width: 40.0625em) {
