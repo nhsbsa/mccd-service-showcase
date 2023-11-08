@@ -83,6 +83,10 @@ html {
   }
 }
 
+li::marker {
+  color: $govuk-brand-colour;
+}
+
 /* SITEWIDE COMPONENTS */
 
 div.page-intro {
