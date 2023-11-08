@@ -185,3 +185,24 @@ div.statistic {
     font-size: 4rem;
   }
 }
+
+div.person-profile {
+  text-align: center;
+
+  img {
+    width: 100px;
+    height: auto;
+  }
+
+  ul {
+    li {
+      list-style: none;
+      font-size: 1rem;
+      
+      &:first-of-type {
+        font-size: 1.2rem;
+        font-weight: bold;
+      }
+    }
+  }
+}

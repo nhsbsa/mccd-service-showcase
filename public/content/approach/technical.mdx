@@ -14,8 +14,8 @@ description: The page description
     <GridColumn width={'1/3'}>
         <nav className="in-page-nav">
             #### On this page
-            * [Section 1](#section-1)
-            * [Section 2](#section-2)
+            * [Technology approach](#technology-approach)
+            * [Technical principles](#technical-principles)
         </nav>
     </GridColumn>
     <GridColumn width={'full'}>
@@ -24,11 +24,212 @@ description: The page description
 </GridRow>
 
 <GridRow>
+
+    <GridColumn width={'full'}>
+        ## Technology approach
+    </GridColumn>
+
+    <GridColumn width={'3/4'}>
+        * Basic description of the tech stack
+        * Tech arch diagram
+
+        ![Tech arch diagram](https://placehold.co/540x320?text=tech+arch+diagram)
+
+    </GridColumn>
+    
+    <GridColumn width={'1/4'}>
+        <a className="signpost" href="#">
+            #### Detailed architecture diagrams
+            Add a line here about what this is
+        </a>
+    </GridColumn>
+
+</GridRow>
+
+<GridRow>
+
+    <GridColumn width={'full'}>
+        <hr className="govuk-section-break govuk-section-break--l"/>
+        ## Technical principles
+    </GridColumn>
+
     <GridColumn width={'3/4'}>
 
-        ## Expected technical architecture
+        ### Make new source code open
 
-        Cras justo odio, dapibus ac facilisis in, egestas eget quam. Aenean lacinia bibendum nulla sed consectetur. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Aenean lacinia bibendum nulla sed consectetur. Curabitur blandit tempus porttitor.
+        <Table>
+            <TableHeader>
+                <TableCell>Principle</TableCell>
+                <TableCell>Details</TableCell>
+            </TableHeader>
+            <TableRow>
+                <TableCell width="25%">
+                    Technology considerations
+                </TableCell>
+                <TableCell width="75%">
+                    * Hosted by Amazon Web Services (Public Cloud First Policy)
+                    * Builds to provide end-to-end, seamless and integrated Digital Service (GDS Design Principle of Designing Services Not Websites)
+                    * Internet-facing accessible web portal to View/Submit/Edit MCCD (GDS Principle of This is for Everyone)
+                    * Asynchronous services (AWS Well-Architected – Performance Pillar and NHS Technology Standard of enabling infrastructure that supports technical evolution, financial investment and resilience)
+                    * Implemented in Java using Open-Source components (GDS Principle of Make Things Open)
+                    * Reuse existing services (Leveraged BSA Common components where appropriate)
+                </TableCell>
+            </TableRow>
+            <TableRow>
+                <TableCell>
+                    Open-source design
+                </TableCell>
+                <TableCell>
+                    * Prototype code files all stored on the NHS BSA GitHub space
+                    * We plan to open-source access to the prototype in the browser
+                    * Potential to open-source access to our design histories
+                </TableCell>
+            </TableRow>
+            <TableRow>
+                <TableCell>
+                    Making source code open
+                </TableCell>
+                <TableCell>
+                    * NHS BSA now has an approved Open-Source policy
+                    * NHS BSA Private GitLab mirroring
+                        - Connectivity
+                        - Mirror the main (Production) branch to the public repo
+                    * Secrets detection
+                        - Scanned existing repos to identify potential leaks
+                        - Established a shared GitLeaks configuration which can be consumed and updated by all other NHS BSA project teams
+                        - Setup GitLeaks pre-commit hook to prevent secrets from being accidentally added
+                    * Added open-source relevant documentation as per the guidelines
+                    * Generated OWASP security check report to assess vulnerabilities in the code
+                    * Upgrade to the latest Java version (JDK 17) to reduce code vulnerability
+                </TableCell>
+            </TableRow>
+        </Table>
+        
+        ### Choose the right tools and technology
+
+        <Table>
+            <TableHeader>
+                <TableCell>Principle</TableCell>
+                <TableCell>Details</TableCell>
+            </TableHeader>
+            <TableRow>
+                <TableCell width="25%">
+                    High availability and fault tolerant service
+                </TableCell>
+                <TableCell width="75%">
+                    We've done the following to make sure our service is both highly available and fault-tolerant:
+                    
+                    * Utilise AWS Cloud Services: We have leveraged AWS's high availability and fault-tolerant infrastructure to ensure that our service is always available to our customers.
+                    * Use Multiple AZs: We have deployed our resources across multiple AWS Availability Zones (AZs) within a region. This ensures that if one or more AZs experience downtime, our services will remain available.
+                    * Monitor Resources: We use AWS CloudWatch to monitor our resources and detect anomalies before they become major issues. We have set up notifications to alert us of potential issues so that we can act before they impact our services.
+                    * Data Backup: We also have backup strategies in place to ensure that data is protected, and we can quickly restore our services in the event of data loss.
+                    * Implement Automatic Failover: We have planned to implement AWS services like Amazon Route 53, Amazon RDS, and Amazon Elastic Load Balancer that automatically detect and route traffic to healthy instances in the event of a failure. This reduces the time it takes to recover from an outage and ensures our services remain available.
+
+                    By taking these steps, we have planned to make our service highly available and fault-tolerant, providing our customers with uninterrupted service and ensuring their satisfaction with our service.
+                </TableCell>
+            </TableRow>
+            <TableRow>
+                <TableCell width="25%">
+                    Deployment pipeline
+                </TableCell>
+                <TableCell width="75%">
+                    * Implemented a streamlined code deployment pipeline for enhanced efficiency
+                    * Established quality assurance protocols prior to merging with Release/Main Branches
+                    * Simulate real-world conditions by testing the service in an environment closely mirroring live production
+                    * Experienced a reduced downtime of ~2 hours during production deployment
+                    * Strategically schedule deployments during early morning or late-night hours to minimize client disruption
+                </TableCell>
+            </TableRow>
+        </Table>
+        
+        ### Operate a reliable service
+
+        <Table>
+            <TableHeader>
+                <TableCell>Principle</TableCell>
+                <TableCell>Details</TableCell>
+            </TableHeader>
+            <TableRow>
+                <TableCell width="25%">
+                    Quality Assurance
+                </TableCell>
+                <TableCell width="75%">
+                    * Manual Testing
+                        - Exploratory Testing
+                        - Usability Testing
+                        - Smoke testing with predefined test cases
+                    * Automated Testing (Cucumber Serenity)
+                        - Functional Testing
+                        - Integration Testing
+                        - Regression Testing
+                    * Performance Testing
+                        - Bottleneck Identification
+                        - Scalability Assessment
+                        - Capacity Planning
+                    * Load Testing
+                    * Stress Testing
+                </TableCell>
+            </TableRow>
+            <TableRow>
+                <TableCell width="25%">
+                    Observability and monitoring
+                </TableCell>
+                <TableCell width="75%">
+                    * Audit Logging has been enabled at the database level to trace what has changed and who committed the change
+                    * Penetration Testing has been passed with no high-severity vulnerability
+                    * In Beta we will add AWS WAF (Web Application Firewall) to protect the web applications from common web exploits and vulnerabilities by filtering, monitoring, and controlling incoming web traffic based on customizable security rule
+                    * We have also planned to add AWS Shield(Beta Phase) to protect against Distributed Denial of Service (DDoS) attacks.
+                    * Scanned and removed any PII or sensitive data in the codebase or logs
+                </TableCell>
+            </TableRow>
+        </Table>
+        
+        ### Respect and protect users' confidentiality and privacy
+
+        <Table>
+            <TableHeader>
+                <TableCell>Principle</TableCell>
+                <TableCell>Details</TableCell>
+            </TableHeader>
+            <TableRow>
+                <TableCell width="25%">
+                    MCCD security standard for system access
+                </TableCell>
+                <TableCell width="75%">
+                    * IAL (Identity Assurance Level) and AAL (Authenticator Assurance Level) are part of the guidelines (Publication 800-63) provided by the National Institute of Standards and Technology (NIST).
+                    * MCCD (Alpha phase) operates at IAL2-AAL2 and the system can only be accessed by the registered users requested via the proper channel. No other means of accessing the data is allowed.
+                    * Currently, there is an ongoing discussion with DHSC on whether to elevate the security standard to IAL3-ALL3.
+                </TableCell>
+            </TableRow>
+            <TableRow>
+                <TableCell width="25%">
+                    Authentication
+                </TableCell>
+                <TableCell width="75%">
+                    * AWS Cognito is a user management service provided by Amazon Web Services, designed to handle user authentication, authorization, and user data synchronization for web and mobile applications. It supports various identity providers and enables developers to create secure applications without managing complex user infrastructure.
+                    * By leveraging Cognito's Multi-Factor Authentication (MFA) feature, we have provided an additional layer of security during user authentication, ensuring a more robust protection for your web and mobile applications (IAL2-AAL2).
+                </TableCell>
+            </TableRow>
+        </Table>
+        
+        ### Respect and protect users' confidentiality and privacy
+
+        <Table>
+            <TableHeader>
+                <TableCell>Principle</TableCell>
+                <TableCell>Details</TableCell>
+            </TableHeader>
+            <TableRow>
+                <TableCell width="25%">
+                    MCCD security standard for system access
+                </TableCell>
+                <TableCell width="75%">
+                    * IAL (Identity Assurance Level) and AAL (Authenticator Assurance Level) are part of the guidelines (Publication 800-63) provided by the National Institute of Standards and Technology (NIST).
+                    * MCCD (Alpha phase) operates at IAL2-AAL2 and the system can only be accessed by the registered users requested via the proper channel. No other means of accessing the data is allowed.
+                    * Currently, there is an ongoing discussion with DHSC on whether to elevate the security standard to IAL3-ALL3.
+                </TableCell>
+            </TableRow>
+        </Table>
 
         ## Integration considerations
 
