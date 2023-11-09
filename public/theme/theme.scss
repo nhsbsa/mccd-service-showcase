@@ -100,6 +100,17 @@ li::marker {
   color: $govuk-brand-colour;
 }
 
+.nhsuk-warning-callout {
+  &.quote {
+    border-color: $govuk-inset-text-border-colour;
+    background-color: $govuk-canvas-background-colour;
+    
+    h2 {
+      background-color: $govuk-inset-text-border-colour;
+    }
+  }
+}
+
 /* SITEWIDE COMPONENTS */
 
 div.page-intro {
