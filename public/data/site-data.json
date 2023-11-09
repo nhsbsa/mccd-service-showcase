@@ -114,9 +114,7 @@
     "priority": null,
     "value": null,
     "complexity": null,
-    "breadcrumbs": [
-      "NHSBSA, /"
-    ]
+    "breadcrumbs": null
   },
   {
     "slug": [
@@ -131,10 +129,7 @@
     "value": "High Value",
     "complexity": "low complexity",
     "product": "Leavers",
-    "breadcrumbs": [
-      "NHSBSA, /",
-      "Features, /features"
-    ]
+    "breadcrumbs": null
   },
   {
     "slug": [

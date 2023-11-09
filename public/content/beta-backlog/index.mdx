@@ -5,15 +5,34 @@ priority:
 value:
 complexity:
 breadcrumbs:
- - NHSBSA, /
 ---
 
 <Heading caption='Outputs from alpha' tag='h1'>Beta backlog</Heading>
 
+<GridRow>
+    <GridColumn width={'2/3'}>
+        <LeadParagraph>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id dolor id nibh ultricies vehicula ut id elit.
+        </LeadParagraph>
+    </GridColumn>
+    <GridColumn width={'1/3'}>
+    </GridColumn>
+</GridRow>
+
+<GridRow>
+
+    <GridColumn width={'3/4'}>
+
+        <WarningCallout title={"To be updated"}>
+            The content for this page will be populated on Monday 13 Nov 2023 from the recent beta planning outputs
+        </WarningCallout>
+    
+    </GridColumn>
+
+</GridRow>
+
 <ReadData>
     <SortableLists dataFilter={"slug:features"} sortBy={{
-        'priority': ['now', 'next', 'later'], 'value': ['high value', 'low value'], 'complexity': ['High complexity',
-            'medium ' +
-            'complexity', 'low complexity'], 'product': []
+        'priority': ['now', 'next', 'later'], 'value': ['high value', 'low value'], 'complexity': ['High complexity', 'medium complexity', 'low complexity'], 'product': []
     }}/>
 </ReadData>
