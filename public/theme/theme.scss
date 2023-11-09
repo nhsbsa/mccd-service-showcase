@@ -66,6 +66,10 @@ html {
   scroll-behavior: smooth;
 }
 
+div.govuk-grid-column-full > h2 {
+  margin-top: 50px;
+}
+
 .govuk-header__link, .govuk-header__link--homepage {
   &:hover {
     border-color: transparent !important;

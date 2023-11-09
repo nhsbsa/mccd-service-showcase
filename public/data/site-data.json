@@ -17,6 +17,16 @@
   {
     "slug": [
       "approach",
+      "data"
+    ],
+    "url": "/approach/data",
+    "file": "public/content/approach/data.mdx",
+    "title": "NHS BSA Project | Hippo Digital",
+    "description": "The page description"
+  },
+  {
+    "slug": [
+      "approach",
       "design"
     ],
     "url": "/approach/design",
