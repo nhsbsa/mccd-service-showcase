@@ -61,6 +61,15 @@ $mccd-light-grey: #ececec;
 $mccd-mid-grey: #cccccc;
 $mccd-light-green: #e1ecc1;
 
+/* FONTAWESOME */
+.far, .fas {
+  color: $govuk-secondary-text-colour;
+  
+  &.blue {
+    color: $govuk-brand-colour;
+  }
+}
+
 /* HTML & GOV OVERRIDES */
 html {
   scroll-behavior: smooth;
