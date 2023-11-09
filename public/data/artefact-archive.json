@@ -3,36 +3,32 @@
     "title": "Design log (Prototype v7): The medical examiner MCCD summary page – as of 12/10/2023",
     "description": "The assumption is that the MEs have done their scrutiny (using the MES – Manage my caseload service) and this screen enables the ME to sign off the MCCD as correct.",
     "url": "/artefacts/pdf/design-logs/MCCD_Design_history_-_prototype_version_7_-_ME_summary_of_MCCD_-_17-10-2023.pdf",
-    "projectStage": "Plan and demo",
-    "team": "User Centred Design (UCD)",
-    "status": "Completed",
-    "platform": "PDF"
+    "activity": "Plan and demo",
+    "focus": "Design",
+    "type": "PDF"
   },
   {
     "title": "Document Two",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Hac habitasse platea dictumst quisque sagittis purus sit amet volutpat.",
     "url": "https://docs.google.com/spreadsheets/d/1cbHCaJACe8ISXGjhBMXm2HMO61Tldm2N_PlvZVYj2B0/edit#gid=0",
-    "projectStage": "Design and iterate",
-    "team": "User Experience (UX)",
-    "status": "Completed",
-    "platform": "Miro"
+    "activity": "Design and iterate",
+    "focus": "Business analysis",
+    "type": "Miro"
   },
   {
     "title": "Document Five",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique.",
     "url": "https://docs.google.com/spreadsheets/d/1cbHCaJACe8ISXGjhBMXm2HMO61Tldm2N_PlvZVYj2B0/edit#gid=0",
-    "projectStage": "Develop and test",
-    "team": "Developers",
-    "status": "In progress",
-    "platform": "Trello"
+    "activity": "Develop and test",
+    "focus": "Research",
+    "type": "Excel"
   },
   {
     "title": "Document Six",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique.",
     "url": "https://docs.google.com/spreadsheets/d/1cbHCaJACe8ISXGjhBMXm2HMO61Tldm2N_PlvZVYj2B0/edit#gid=0",
-    "projectStage": "Research and explore",
-    "team": "Developers",
-    "status": "In progress",
-    "platform": "Trello"
+    "activity": "Research and explore",
+    "focus": "Technical",
+    "type": "Miro"
   }
 ]

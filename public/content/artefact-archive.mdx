@@ -5,6 +5,28 @@ description: Artefact archive
 
 <Heading caption='Outputs from alpha' tag='h1'>Artefact archive</Heading>
 
+<GridRow>
+    <GridColumn width={'2/3'}>
+        <LeadParagraph>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id dolor id nibh ultricies vehicula ut id elit.
+        </LeadParagraph>
+    </GridColumn>
+    <GridColumn width={'1/3'}>
+    </GridColumn>
+</GridRow>
+
+<GridRow>
+
+    <GridColumn width={'3/4'}>
+
+        <WarningCallout title={"To be updated"}>
+            The content for this page will be populated on Monday 13 Nov 2023 from a selection of resources on Teams and Miro
+        </WarningCallout>
+    
+    </GridColumn>
+
+</GridRow>
+
 <ReadData apiEndpoint={'/api/data/artefact-archive'}>
-    <FacetSearch facets={'Project stage: Team:Status:Platform'} title={'Artefact archive'} />
+    <FacetSearch facets={'Activity: Focus: Type'} title={'Artefact archive'} />
 </ReadData>
