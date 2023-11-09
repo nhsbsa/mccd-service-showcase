@@ -2,11 +2,12 @@ import React from 'react';
 
 interface Props {
   title: string
+  className?: string
   children: React.ReactNode
 }
-function WarningCallout({ children, title }:Props) {
+function WarningCallout({ className, children, title }:Props) {
   return (
-    <div className="nhsuk-warning-callout">
+    <div className={className ? `nhsuk-warning-callout ${className}` : 'nhsuk-warning-callout'}>
       <h2 className="govuk-heading-m nhsuk-warning-callout__label">
         {title}
         <span className="govuk-visually-hidden">:</span>
