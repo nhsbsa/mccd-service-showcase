@@ -1,0 +1,121 @@
+---
+title: NHS BSA Project | Hippo Digital
+description: The page description
+---
+
+<Heading caption='Our approach' tag='h1'>Data overview</Heading>
+
+<GridRow>
+    <GridColumn width={'2/3'}>
+        <LeadParagraph>
+            As the MCCD forms part of a wider death management journey, one of our activities for alpha was understanding the information flows required to support a successful journey.
+        </LeadParagraph>
+    </GridColumn>
+    <GridColumn width={'1/3'}>
+        <nav className="in-page-nav">
+            #### On this page
+            * [Data approach](#data-approach)
+            * [Insights](#insights)
+        </nav>
+    </GridColumn>
+</GridRow>
+
+<GridRow>
+
+    <GridColumn width={'full'}>
+        ## Data approach
+    </GridColumn>
+
+    <GridColumn width={'3/4'}>
+
+        Alongside our work mapping out the As-Is and To-Be service journeys, we ran a series of sessions with stakeholders in the journey to: 
+
+        * Map out the data required to complete an MCCD and support death management tasks
+        * Document known downstream system constraints
+        * Capture the rationale for each field in the MCCD
+        * Understand where the move to a digital product affects the data required
+
+        These sessions included representation from: 
+
+        * DHSC Death Certification Reform Policy
+        * GRO
+        * ONS
+        * HMPO
+        * Welsh Government
+
+        We also carried out desk research: 
+
+        * Analysis of research findings to better understand data related pain points
+        * Mapping out the high-level information flows for existing processes, and current methods of communication
+        * Analysis of the Spine Patient Journey #10: Death of a Patient, to understand how death notifications are used in the NHS
+        * Analysis of the PDS FHIR API spec and GMC data to understand which fields in the MCCD could have these as a data source
+
+    </GridColumn>
+
+</GridRow>
+
+<GridRow>
+
+    <GridColumn width={'full'}>
+        <hr className="govuk-section-break govuk-section-break--l"/>
+        ## Insights
+    </GridColumn>
+
+    <GridColumn width={'3/4'}>
+
+        ### Wide variation in systems and communication methods
+
+        Currently recording an MCCD and registering a death requires information to flow between a number of systems, depending on the setting and the digital maturity of the healthcare organisation, and may include: 
+
+        * Primary Care or other clinical systems
+        * MCCD or scrutiny templates built into clinical systems
+        * Microsoft Word templates to facilitate scrutiny and MCCD completion
+        * Purpose-built ME scrutiny systems
+        * Telephone and email
+        * Face to face conversations
+        * Scanning and emailing documents, including MCCDs
+        * Physically transporting the MCCD to the register office
+        * GRO system RON to hold death registration information
+        * ONS systems to hold mortality data
+        * PDS Spine to update the patient as deceased in PDS
+
+        ### Legislative constraints impact usability 
+
+        One of the main pain points users identified in the current MCCD form is around the recording of cause of death information, which was mentioned by attending practitioners, medical examiners and registrars. Incomplete or poor-quality recording of cause of death information in the MCCD can cause it to be rejected by the local register service, delaying registration of death.
+
+        The legislation governing the MCCD service prohibits influencing the attending practitioner’s determination of cause of death, which we have been advised includes features such as selecting from a drop-down list, auto complete, and spell check. As a result, cause of death information is captured in free text fields, and we recognise this will be a barrier to supporting the recording of accurate, high-quality information in this section.
+
+        ### Offline journeys will require different information 
+
+        One of the advantages of a digital journey is in supporting users to provide clear, accurate information, and being able to navigate users through an efficient, effective user journey. The guidance for the MCCD Form 65 states that it is for the “death of a live-born child dying within the first twenty-eight days of life”. Our research and stakeholder engagement sessions identified variation in how this was interpreted. As this would apply to approximately 1,500 deaths a year, or less than 0.5% of all deaths, variations in interpretation may significantly skew mortality data, and could impact our understanding of public health trends and local learning opportunities.
+
+        A digital journey provides the opportunity to support users to have a consistent experience, by using date of birth and date of death information to route the user through the right service journey. This may be more challenging in an offline journey.
+
+    </GridColumn>
+    
+    <GridColumn width={'1/4'}>
+        <a className="signpost" href="https://nhsbsauk.sharepoint.com/:x:/t/DeathCertificationReform193/EVbVHAlWk59HqQ4p-vQ2SDUBYxwe__bsTFEzlGsT_a3fmQ?e=AnslsV">
+            #### MCCD Data Dictionary and Question Protocol
+            Add a line here about what this is
+            (Restricted access)
+        </a>
+    </GridColumn>
+
+</GridRow>
+
+<GridRow>
+    <GridColumn width={'full'}>
+        ---
+    </GridColumn>
+</GridRow>
+<GridRow>
+    <GridColumn width={'1/2'}>
+        &nbsp;
+    </GridColumn>
+    <GridColumn width={'1/2'}>
+        <a className="next-page" href="/approach/technical">
+            #### Our approach
+            Next: <span>Technical overview</span>
+        </a>
+    </GridColumn>
+</GridRow>
