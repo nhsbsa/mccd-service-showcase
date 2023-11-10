@@ -150,7 +150,7 @@ type FacetMapType = {
 const FacetSearch: React.FC<TFacetSearch> = ({
   data,
   facets: initialFacets,
-  searchType = 'documents',
+  searchType = 'artefacts',
   titleField = 'title',
   descriptionField = 'description',
   urlField = 'url',
@@ -397,8 +397,7 @@ const FacetSearch: React.FC<TFacetSearch> = ({
             ) : (
               <div className="no-results govuk-!-font-size-19">
                 <p className="govuk-body govuk-!-font-weight-bold">
-                  There are no matching
-                  results.
+                  There are no matching results.
                 </p>
                 <p className="govuk-body">Improve your search results by:</p>
                 <ul className="govuk-list govuk-list--bullet">
