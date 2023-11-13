@@ -24,6 +24,8 @@ import LeadParagraph from '@/components/LeadParagraph';
 import ReadData from '@/components/Data';
 import { MDXComponents } from 'mdx/types';
 import Zoom from '@/components/Zoom';
+// eslint-disable-next-line import/no-extraneous-dependencies, no-unused-vars
+import remarkUnwrapImages from 'remark-unwrap-images';
 import Image from './Image';
 
 interface MDXProps {
