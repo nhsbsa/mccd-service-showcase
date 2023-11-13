@@ -70,6 +70,18 @@ $mccd-light-green: #e1ecc1;
   }
 }
 
+/* ZOOM IMAGE HANDLER */
+[data-rmiz-modal-overlay="visible"] {
+  background-color: rgba(255, 255, 255, 0.9) !important;
+}
+[data-rmiz-modal-content] {
+  img {
+    border: 4px solid $govuk-inset-text-border-colour;
+    padding: 6px;
+    background: $govuk-body-background-colour;
+  }
+}
+
 /* HTML & GOV OVERRIDES */
 html {
   scroll-behavior: smooth;
