@@ -294,6 +294,16 @@
   {
     "slug": [
       "understanding",
+      "context"
+    ],
+    "url": "/understanding/context",
+    "file": "public/content/understanding/context.mdx",
+    "title": "NHS BSA Project | Hippo Digital",
+    "description": "The home page description"
+  },
+  {
+    "slug": [
+      "understanding",
       "problem"
     ],
     "url": "/understanding/problem",
