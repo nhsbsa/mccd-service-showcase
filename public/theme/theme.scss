@@ -248,7 +248,12 @@ div.statistic {
 }
 
 div.person-profile {
+  margin-bottom: 10px;
   text-align: center;
+
+  > p {
+    margin-bottom: 5px;
+  }
 
   img {
     width: 100px;
@@ -256,6 +261,8 @@ div.person-profile {
   }
 
   ul {
+    padding-left: 0;
+
     li {
       list-style: none;
       font-size: 1rem;
