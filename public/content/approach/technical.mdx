@@ -31,7 +31,7 @@ description: The page description
         * Basic description of the tech stack
         * Tech arch diagram
 
-        ![Tech arch diagram](https://placehold.co/540x320?text=tech+arch+diagram)
+        <ModalImage className="modal-img" alt="Technical architecture" small={'/artefacts/images/tech-architecture.png'} medium={'/artefacts/images/tech-architecture.png'} hideZoom />
 
     </GridColumn>
     
@@ -54,53 +54,20 @@ description: The page description
 
         ### Make new source code open
 
-        <Table>
-            <TableHeader>
-                <TableCell>Principle</TableCell>
-                <TableCell>Details</TableCell>
-            </TableHeader>
-            <TableRow>
-                <TableCell width="25%">
-                    Technology considerations
-                </TableCell>
-                <TableCell width="75%">
-                    * Hosted by Amazon Web Services (Public Cloud First Policy)
-                    * Builds to provide end-to-end, seamless and integrated Digital Service (GDS Design Principle of Designing Services Not Websites)
-                    * Internet-facing accessible web portal to View/Submit/Edit MCCD (GDS Principle of This is for Everyone)
-                    * Asynchronous services (AWS Well-Architected – Performance Pillar and NHS Technology Standard of enabling infrastructure that supports technical evolution, financial investment and resilience)
-                    * Implemented in Java using Open-Source components (GDS Principle of Make Things Open)
-                    * Reuse existing services (Leveraged BSA Common components where appropriate)
-                </TableCell>
-            </TableRow>
-            <TableRow>
-                <TableCell>
-                    Open-source design
-                </TableCell>
-                <TableCell>
-                    * Prototype code files all stored on the NHS BSA GitHub space
-                    * We plan to open-source access to the prototype in the browser
-                    * Potential to open-source access to our design histories
-                </TableCell>
-            </TableRow>
-            <TableRow>
-                <TableCell>
-                    Making source code open
-                </TableCell>
-                <TableCell>
-                    * NHS BSA now has an approved Open-Source policy
-                    * NHS BSA Private GitLab mirroring
-                        - Connectivity
-                        - Mirror the main (Production) branch to the public repo
-                    * Secrets detection
-                        - Scanned existing repos to identify potential leaks
-                        - Established a shared GitLeaks configuration which can be consumed and updated by all other NHS BSA project teams
-                        - Setup GitLeaks pre-commit hook to prevent secrets from being accidentally added
-                    * Added open-source relevant documentation as per the guidelines
-                    * Generated OWASP security check report to assess vulnerabilities in the code
-                    * Upgrade to the latest Java version (JDK 17) to reduce code vulnerability
-                </TableCell>
-            </TableRow>
-        </Table>
+        Our open-source repository is not currently public as we are in the process of preparing our source code for open access, hence it remains in a private repository.
+        
+        We are working on the necessary steps to transition it to an open repository.  
+
+        Our current actions include: 
+
+        * Scanning existing repositories to detect any potential data leaks. 
+        * Implementing GitLeaks as a pre-commit hook to prevent the accidental inclusion of secrets in our commits. 
+        * Anonymizing code contributors for both frontend and backend APIs to maintain privacy. 
+        * Resolving any GitLeaks issues identified in our frontend and backend APIs. 
+        * Upgrade to the latest Java version (JDK 17) to reduce code vulnerability
+        * Addressing and remediating vulnerabilities found within the APIs.
+
+        Once these measures are successfully implemented, we will conduct a thorough vulnerability assessment of the code in compliance with the BSA Open-Source policy before making the repository available publicly.
         
         ### Choose the right tools and technology
 
@@ -239,7 +206,11 @@ description: The page description
     </GridColumn>
 
     <GridColumn width={'3/4'}>
+
         Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cras justo odio, dapibus ac facilisis in, egestas eget quam.
+        
+        <ModalImage className="modal-img" alt="Integration opportunities" small={'/artefacts/images/tech-integration-opps.png'} medium={'/artefacts/images/tech-integration-opps.png'} hideZoom />
+
     </GridColumn>
 
 </GridRow>
