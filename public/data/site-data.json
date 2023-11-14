@@ -229,6 +229,16 @@
   },
   {
     "slug": [
+      "beta",
+      "to-be"
+    ],
+    "url": "/beta/to-be",
+    "file": "public/content/beta/to-be.mdx",
+    "title": "NHS BSA Project | Hippo Digital",
+    "description": "The home page description"
+  },
+  {
+    "slug": [
       "data-test"
     ],
     "url": "/data-test",
@@ -278,6 +288,16 @@
     ],
     "url": "/understanding/as-is",
     "file": "public/content/understanding/as-is.mdx",
+    "title": "NHS BSA Project | Hippo Digital",
+    "description": "The home page description"
+  },
+  {
+    "slug": [
+      "understanding",
+      "context"
+    ],
+    "url": "/understanding/context",
+    "file": "public/content/understanding/context.mdx",
     "title": "NHS BSA Project | Hippo Digital",
     "description": "The home page description"
   },
