@@ -33,6 +33,7 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-medium-image-zoom": "^5.1.8",
+    "react-modal-image": "^2.6.0",
     "remark-unwrap-images": "^4.0.0",
     "sass": "^1.66.1",
     "typescript": "^5.2.2"

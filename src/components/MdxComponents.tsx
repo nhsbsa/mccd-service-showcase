@@ -24,6 +24,7 @@ import LeadParagraph from '@/components/LeadParagraph';
 import ReadData from '@/components/Data';
 import { MDXComponents } from 'mdx/types';
 import Zoom from '@/components/Zoom';
+import ModalImage from '@/components/ModalImage';
 import Image from './Image';
 
 interface MDXProps {
@@ -132,4 +133,5 @@ export const MdxComponents = {
   BackLink,
   WarningCallout,
   Zoom,
+  ModalImage,
 } as MDXComponents;

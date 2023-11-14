@@ -304,6 +304,16 @@
   {
     "slug": [
       "understanding",
+      "research-image-fix"
+    ],
+    "url": "/understanding/research-image-fix",
+    "file": "public/content/understanding/research-image-fix.mdx",
+    "title": "NHS BSA Project | Hippo Digital",
+    "description": "The home page description"
+  },
+  {
+    "slug": [
+      "understanding",
       "users"
     ],
     "url": "/understanding/users",
