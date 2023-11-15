@@ -8,7 +8,7 @@ description: The page description
 <GridRow>
     <GridColumn width={'2/3'}>
         <LeadParagraph>
-            Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
+            The design process has been seamlessly aligned with user research throughout the project, focussed heavily on the iteration of a highly detailed prototype to test hypotheses and validate design decisions.
         </LeadParagraph>
     </GridColumn>
     <GridColumn width={'1/3'}>
@@ -30,31 +30,256 @@ description: The page description
     <GridColumn width={'3/4'}>
 
         * We have designed our service in consultation with Policy teams, in line with styles, components and patterns from the GOV.UK Design System.
-        * Design decisions were made with our key users' needs in mind (insert key user needs) and were followed by several rounds of user testing.
+        * Design decisions were made with our key [users' needs](/understanding/users/#user-needs) in mind and were followed by several rounds of user testing.
         * We have streamlined the creation of new MCCDs by implementing a postcode finder and user profiles, which reduce the need for manual input of data each time a certificate is created. In order to reduce common errors and questions observed in testing, we have also reduced the usage of free text fields, providing contextual guidance on how MCCDs should be completed.
         * We will continue to gather and evaluate feedback from users in order to iterate and improve the service offered. To support this, we have also implemented a feedback gathering flow, displayed after a certificate is created.
 
-        ### Design reviews and iteration
-
-        Sed posuere consectetur est at lobortis. Curabitur blandit tempus porttitor.
-
-        ### Prototyping
-
-        Sed posuere consectetur est at lobortis. Curabitur blandit tempus porttitor.
-        
-        ## Key requirements of the design
-
-        Cras justo odio, dapibus ac facilisis in, egestas eget quam. Aenean lacinia bibendum nulla sed consectetur. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Aenean lacinia bibendum nulla sed consectetur. Curabitur blandit tempus porttitor.
-
-        ## Early ideas
-
-        Sed posuere consectetur est at lobortis. Curabitur blandit tempus porttitor.
-
-        ### First tested concept
-
-        Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo.
+        To arrive at the essential prototype output from the design process, extensive design thinking, workshops, ideation and collaboration is conducted continually as part of our agile delivery process.
 
     </GridColumn>
+
+    <GridRow>
+
+        <GridColumn width={'1/3'}>
+
+            #### Snapshot of screens in Figma
+            <ModalImage className="modal-img" alt="Snapshot of Figma canvas" small={'/artefacts/images/design-figma-snapshot.jpg'} medium={'/artefacts/images/design-figma-snapshot.jpg'} hideZoom />
+
+        </GridColumn>
+        
+        <GridColumn width={'1/3'}>
+
+            #### Snapshot of Miro user flows board
+            <ModalImage className="modal-img" alt="Snapshot of Figma canvas" small={'/artefacts/images/design-user-flows-miro-board.jpg'} medium={'/artefacts/images/design-user-flows-miro-board.jpg'} hideZoom />
+
+        </GridColumn>
+        
+        <GridColumn width={'1/3'}>
+
+            #### New user journeys in progress
+            <ModalImage className="modal-img" alt="Snapshot of Figma canvas" small={'/artefacts/images/design-v10-screen-flows.jpg'} medium={'/artefacts/images/design-v10-screen-flows.jpg'} hideZoom />
+
+        </GridColumn>
+
+    </GridRow>
+
+</GridRow>
+
+<GridRow>
+
+    <GridColumn width={'full'}>
+        ## Major design versions
+    </GridColumn>
+
+    <GridColumn width={'3/4'}>
+
+        There were 10 major releases of the prototype, each representing significant changes to be researched with participants, along with many smaller incremental design iterations.
+
+        A brief explanation of the versions is provided here to demonstrate the breadth and depth of design iteration achieved during the alpha phase.
+
+        Each major release is available from the prototype landing page.
+    
+    </GridColumn>
+
+    <GridColumn width={'1/4'}>
+
+        <a className="signpost" href="https://mccd-govuk.herokuapp.com/">
+            #### Prototype
+            ![Prototype landing page](/artefacts/images/prototype-homepage-grab.png)  
+            <i className="fas fa-key"></i> Password: `NHSBSA`
+        </a>
+
+    </GridColumn>
+
+</GridRow>
+
+<GridRow>
+
+    <GridColumn width={'full'}>
+        ### Version 6
+    </GridColumn>
+
+    <GridColumn width={'3/4'}>
+
+        #### Overview
+
+        Full rebrand to use the GOVUK Toolkit, including:
+
+        * removed NHS branding
+        * implemented the GOVUK Toolkit
+        * includes over and under 28 days journey
+    
+    </GridColumn>
+    
+    <GridColumn width={'1/4'}>
+
+        <a className="signpost" href="/artefacts/pdf/user-flows-v6-prototype.pdf">
+            #### Prototype v6 user flows  
+            <i className="fas fa-file"></i> PDF format
+        </a>
+    
+    </GridColumn>
+
+</GridRow>
+
+<GridRow>
+
+    <GridColumn width={'full'}>
+        <hr className="govuk-section-break govuk-section-break--m" />
+        ### Version 7
+    </GridColumn>
+
+    <GridColumn width={'3/4'}>
+
+        #### Overview
+
+        MES and MCCD Crossover, including:
+
+        * Registration flow
+        * AP dashboard
+        * ME dashboard and MCCD review page
+
+        #### Content design
+
+        An initial content review of version 7 took place. This review looked at ensuring that the GOV.UK Design System components and NHSBSA digital style guide and standards were correctly implemented.
+
+        This initial review also included:
+
+        * the use of words and jargon, such as how we refer to the deceased
+        * which abbreviations to use or not use, such as MCCD, MEO, AP
+        * the use of plain English
+        * grammar and punctuation
+        * readability
+
+        Usability research of version 7 of the prototype then revealed further unconsidered issues with the content. Medical examiners found the start page confusing and attending practitioners found the dashboard confusing.
+
+        This highlighted that the content was too generic, and it wasn't considering the needs of the audience.
+    
+    </GridColumn>
+
+    <GridColumn width={'1/4'}>
+
+        <a className="signpost" href="/artefacts/pdf/user-flows-v7-prototype.pdf">
+            #### Prototype v7 user flows  
+            <i className="fas fa-file"></i> PDF format
+        </a>
+        
+        <a className="signpost" href="/artefacts/pdf/design-logs/proto-v7_me-summary_17-10-2023.pdf">
+            #### Design log  
+            Medical examiner summary  
+            <i className="fas fa-file"></i> PDF format
+        </a>
+
+        <a className="signpost" href="/artefacts/pdf/design-logs/proto-v7_your-details_17-10-2023.pdf">
+            #### Design log  
+            Your details  
+            <i className="fas fa-file"></i> PDF format
+        </a>
+    
+    </GridColumn>
+
+</GridRow>
+
+<GridRow>
+
+    <GridColumn width={'full'}>
+        <hr className="govuk-section-break govuk-section-break--m" />
+        ### Version 8
+    </GridColumn>
+
+    <GridColumn width={'3/4'}>
+
+        #### Overview
+
+        Postcode lookup functionality, including:
+
+        * fully functional postcode lookup
+        * iteration for the registeration process
+        * new dashboard view
+        * revised declaration content 
+    
+    </GridColumn>
+
+    <GridColumn width={'1/4'}>
+
+        <a className="signpost" href="/artefacts/pdf/design-logs/proto-v8_postcode-lookup_23-10-2023.pdf">
+            #### Design log  
+            Postcode lookup  
+            <i className="fas fa-file"></i> PDF format
+        </a>
+    
+    </GridColumn>
+
+</GridRow>
+
+<GridRow>
+
+    <GridColumn width={'full'}>
+        <hr className="govuk-section-break govuk-section-break--m" />
+        ### Version 9
+    </GridColumn>
+
+    <GridColumn width={'3/4'}>
+
+        #### Overview
+
+        Iteration for new form fields and dashboard content, including:
+
+        * start page - content design amends
+        * ME dashboard - new content, new table - Certificates reviewed by you
+        * AP dashboard - new content
+        * ME summary page - design and content changes to declaration
+        * new fields - Deceased's NHS number and middle name of deceased
+        * summary page - Your details removed
+
+        #### Content design
+
+        In version 9 of the prototype the start page was redesigned to address both the needs of the medical examiners and attending practitioners and content has been added to the dashboard.
+
+        With the next round of usability testing soon to be discussed the content will again be amended, and it is anticipated that there will be many more iterations of the content yet to come.
+    
+    </GridColumn>
+
+    <GridColumn width={'1/4'}>
+
+        <a className="signpost" href="/artefacts/pdf/user-flows-v9-prototype.pdf">
+            #### Prototype v9 user flows  
+            <i className="fas fa-file"></i> PDF format
+        </a>
+
+        <a className="signpost" href="/artefacts/pdf/design-logs/proto-v9_me-summary_30-10-2023.pdf">
+            #### Design log  
+            Medical examiner summary  
+            <i className="fas fa-file"></i> PDF format
+        </a>
+
+        <a className="signpost" href="/artefacts/pdf/design-logs/proto-v9_new-questions_30-10-2023.pdf">
+            #### Design log  
+            New questions  
+            <i className="fas fa-file"></i> PDF format
+        </a>
+    
+    </GridColumn>
+
+</GridRow>
+
+<GridRow>
+
+    <GridColumn width={'full'}>
+        <hr className="govuk-section-break govuk-section-break--m" />
+        ### Version 10
+    </GridColumn>
+
+    <GridColumn width={'3/4'}>
+
+        This is the latest version of the design, with ongoing research and iteration to be continued.
+
+        #### Overview
+
+        All questions now match the question protocol
+    
+    </GridColumn>
+
 </GridRow>
 
 <GridRow>
