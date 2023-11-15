@@ -89,14 +89,6 @@ description: The page description
 
     <GridColumn width={'3/4'}>
 
-        ### Authentication options considered
-        
-        #### Three viable authentication options compared
-        
-        <ModalImage className="modal-img" alt="Three viable authentication options compared" small={'/artefacts/images/tech-auth-options-considered.jpg'} medium={'/artefacts/images/tech-auth-options-considered.jpg'} hideZoom />
-        
-        ### Broader integration considerations
-
         <ModalImage className="modal-img" alt="Integration opportunities" small={'/artefacts/images/tech-integration-opps.png'} medium={'/artefacts/images/tech-integration-opps.png'} hideZoom />
 
     </GridColumn>
@@ -172,11 +164,23 @@ description: The page description
             </TableRow>
             <TableRow>
                 <TableCell width="25%">
-                    Authentication
+                    Authentication  
+                    (proof of concept)
                 </TableCell>
                 <TableCell width="75%">
                     * AWS Cognito is a user management service provided by Amazon Web Services, designed to handle user authentication, authorization, and user data synchronization for web and mobile applications. It supports various identity providers and enables developers to create secure applications without managing complex user infrastructure.
                     * By leveraging Cognito's Multi-Factor Authentication (MFA) feature, we have provided an additional layer of security during user authentication, ensuring a more robust protection for your web and mobile applications (IAL2-AAL2).
+                </TableCell>
+            </TableRow>
+            <TableRow>
+                <TableCell width="25%">
+                    Authentication  
+                    (to be)
+                </TableCell>
+                <TableCell width="75%">
+                    * Three viable authentication options have been compared:
+                    
+                    <ModalImage className="modal-img" alt="Three viable authentication options compared" small={'/artefacts/images/tech-auth-options-considered.jpg'} medium={'/artefacts/images/tech-auth-options-considered.jpg'} hideZoom />
                 </TableCell>
             </TableRow>
         </Table>
