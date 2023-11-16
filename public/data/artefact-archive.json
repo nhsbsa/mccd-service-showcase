@@ -54,5 +54,13 @@
     "activity": "Design and iterate",
     "focus": "Design",
     "type": "Website"
+  },
+  {
+    "title": "Performance Framework",
+    "description": "MCCD Performance Framework with outcomes, primary user needs and leading indicators. To be iterated in beta.",
+    "url": "/artefacts/pdf/mccd-performance-framework.pdf",
+    "activity": "Develop and test",
+    "focus": "Technical",
+    "type": "PDF"
   }
 ]
