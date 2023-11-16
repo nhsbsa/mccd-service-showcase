@@ -102,6 +102,12 @@ img.modal-img {
   }
 }
 
+/* PROFILE IMAGE */
+img.team-thumbnail {
+  max-width: 90%;
+  border-radius: 50%;
+}
+
 /* HTML & GOV OVERRIDES */
 html {
   scroll-behavior: smooth;
