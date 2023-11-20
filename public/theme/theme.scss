@@ -57,8 +57,9 @@ $govuk-summary-card-title-background: $govuk-canvas-background-colour;
 //$govuk-tag-blue: #1d70b8;
 
 /* MCCD COLOURS */
-$mccd-light-grey: #ececec;
-$mccd-mid-grey: #cccccc;
+$mccd-lightest-grey: #ececec;
+$mccd-light-grey: #cccccc;
+$mccd-mid-grey: #999999;
 $mccd-light-green: #e1ecc1;
 
 /* FONTAWESOME */
@@ -170,7 +171,7 @@ nav.in-page-nav {
 a.signpost {
   display: block;
   margin-bottom: 20px;
-  border-left: 10px solid $mccd-mid-grey;
+  border-left: 10px solid $mccd-light-grey;
   padding: 1rem;
   background-color: $mccd-light-grey;
   text-decoration: none;
@@ -204,7 +205,7 @@ a.signpost {
 
 a.next-page {
   display: block;
-  border-left: 10px solid $mccd-mid-grey;
+  border-left: 10px solid $mccd-light-grey;
   padding: 1rem;
   background-color: $mccd-light-grey;
   text-decoration: none;
@@ -236,6 +237,17 @@ a.next-page {
     box-shadow: none;
   }
 
+}
+
+span.hint-enlarge {
+  display: block;
+  color: $mccd-mid-grey;
+  font-family: $govuk-font-family;
+  font-size: 1.0rem;
+  text-align: center;
+  .far, .fas {
+    color: $mccd-mid-grey;
+  }
 }
 
 div.statistic {
