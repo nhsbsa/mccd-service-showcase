@@ -173,7 +173,7 @@ a.signpost {
   margin-bottom: 20px;
   border-left: 10px solid $mccd-light-grey;
   padding: 1rem;
-  background-color: $mccd-light-grey;
+  background-color: $mccd-lightest-grey;
   text-decoration: none;
   
   h3, h4 {
@@ -197,7 +197,7 @@ a.signpost {
   }
   
   &:focus {
-    background-color: $mccd-light-grey;
+    background-color: $mccd-lightest-grey;
     box-shadow: none;
   }
   
@@ -207,7 +207,7 @@ a.next-page {
   display: block;
   border-left: 10px solid $mccd-light-grey;
   padding: 1rem;
-  background-color: $mccd-light-grey;
+  background-color: $mccd-lightest-grey;
   text-decoration: none;
   
   h3, h4 {
@@ -233,7 +233,7 @@ a.next-page {
   }
 
   &:focus {
-    background-color: $mccd-light-grey;
+    background-color: $mccd-lightest-grey;
     box-shadow: none;
   }
 
@@ -241,6 +241,7 @@ a.next-page {
 
 span.hint-enlarge {
   display: block;
+  margin-bottom: 20px;
   color: $mccd-mid-grey;
   font-family: $govuk-font-family;
   font-size: 1.0rem;
