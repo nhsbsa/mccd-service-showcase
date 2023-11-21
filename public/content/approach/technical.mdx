@@ -102,178 +102,216 @@ description: The page description
     </GridColumn>
 
     <GridColumn width={'3/4'}>
+
+        <InsetText>
+    
+            ### Operate a reliable service
+            Some inset text Scelerisque in dictum non consectetur. Ante in nibh mauris cursus mattis molestie a iaculis at. Quis
+            viverra nibh cras pulvinar.
+
+            <Details title={'Our principles for operating a reliable service'}>
+                <Table>
+                    <TableHeader>
+                        <TableCell>Principle</TableCell>
+                        <TableCell>Details</TableCell>
+                    </TableHeader>
+                    <TableRow>
+                        <TableCell width="25%">
+                            Quality Assurance
+                        </TableCell>
+                        <TableCell width="75%">
+                            * Manual Testing
+                                - Exploratory Testing
+                                - Usability Testing
+                                - Smoke testing with predefined test cases
+                            * Automated Testing (Cucumber Serenity)
+                                - Functional Testing
+                                - Integration Testing
+                                - Regression Testing
+                            * Performance Testing
+                                - Bottleneck Identification
+                                - Scalability Assessment
+                                - Capacity Planning
+                            * Load Testing
+                            * Stress Testing
+                        </TableCell>
+                    </TableRow>
+                    <TableRow>
+                        <TableCell width="25%">
+                            Observability and monitoring
+                        </TableCell>
+                        <TableCell width="75%">
+                            * Audit Logging has been enabled at the database level to trace what has changed and who committed the change
+                            * Penetration Testing has been passed with no high-severity vulnerability
+                            * In Beta we will add AWS WAF (Web Application Firewall) to protect the web applications from common web exploits and vulnerabilities by filtering, monitoring, and controlling incoming web traffic based on customizable security rule
+                            * We have also planned to add AWS Shield(Beta Phase) to protect against Distributed Denial of Service (DDoS) attacks.
+                            * Scanned and removed any PII or sensitive data in the codebase or logs
+                        </TableCell>
+                    </TableRow>
+                </Table>
+            </Details>
         
-        ### Operate a reliable service
+        </InsetText>
 
-        <Table>
-            <TableHeader>
-                <TableCell>Principle</TableCell>
-                <TableCell>Details</TableCell>
-            </TableHeader>
-            <TableRow>
-                <TableCell width="25%">
-                    Quality Assurance
-                </TableCell>
-                <TableCell width="75%">
-                    * Manual Testing
-                        - Exploratory Testing
-                        - Usability Testing
-                        - Smoke testing with predefined test cases
-                    * Automated Testing (Cucumber Serenity)
-                        - Functional Testing
-                        - Integration Testing
-                        - Regression Testing
-                    * Performance Testing
-                        - Bottleneck Identification
-                        - Scalability Assessment
-                        - Capacity Planning
-                    * Load Testing
-                    * Stress Testing
-                </TableCell>
-            </TableRow>
-            <TableRow>
-                <TableCell width="25%">
-                    Observability and monitoring
-                </TableCell>
-                <TableCell width="75%">
-                    * Audit Logging has been enabled at the database level to trace what has changed and who committed the change
-                    * Penetration Testing has been passed with no high-severity vulnerability
-                    * In Beta we will add AWS WAF (Web Application Firewall) to protect the web applications from common web exploits and vulnerabilities by filtering, monitoring, and controlling incoming web traffic based on customizable security rule
-                    * We have also planned to add AWS Shield(Beta Phase) to protect against Distributed Denial of Service (DDoS) attacks.
-                    * Scanned and removed any PII or sensitive data in the codebase or logs
-                </TableCell>
-            </TableRow>
-        </Table>
+        <InsetText>
+    
+            ### Respect and protect users' confidentiality and privacy
+            Some inset text Scelerisque in dictum non consectetur. Ante in nibh mauris cursus mattis molestie a iaculis at. Quis
+            viverra nibh cras pulvinar.
+
+            <Details title={"Our principles regarding confidentiality and privacy"}>
+
+                <Table>
+                    <TableHeader>
+                        <TableCell>Principle</TableCell>
+                        <TableCell>Details</TableCell>
+                    </TableHeader>
+                    <TableRow>
+                        <TableCell width="25%">
+                            MCCD security standard for system access
+                        </TableCell>
+                        <TableCell width="75%">
+                            * IAL (Identity Assurance Level) and AAL (Authenticator Assurance Level) are part of the guidelines (Publication 800-63) provided by the National Institute of Standards and Technology (NIST).
+                            * MCCD (Alpha phase) operates at IAL2-AAL2 and the system can only be accessed by the registered users requested via the proper channel. No other means of accessing the data is allowed.
+                            * Currently, there is an ongoing discussion with DHSC on whether to elevate the security standard to IAL3-ALL3.
+                        </TableCell>
+                    </TableRow>
+                    <TableRow>
+                        <TableCell width="25%">
+                            Authentication  
+                            (proof of concept)
+                        </TableCell>
+                        <TableCell width="75%">
+                            * AWS Cognito is a user management service provided by Amazon Web Services, designed to handle user authentication, authorization, and user data synchronization for web and mobile applications. It supports various identity providers and enables developers to create secure applications without managing complex user infrastructure.
+                            * By leveraging Cognito's Multi-Factor Authentication (MFA) feature, we have provided an additional layer of security during user authentication, ensuring a more robust protection for your web and mobile applications (IAL2-AAL2).
+                        </TableCell>
+                    </TableRow>
+                    <TableRow>
+                        <TableCell width="25%">
+                            Authentication  
+                            (to be)
+                        </TableCell>
+                        <TableCell width="75%">
+                            * Three viable authentication options have been compared:
+                            
+                            <ZoomImage alt="Three viable authentication options compared" small={'/artefacts/images/tech-auth-options-considered.jpg'} medium={'/artefacts/images/tech-auth-options-considered.jpg'} />
+                        </TableCell>
+                    </TableRow>
+                </Table>
+            
+            </Details>
         
-        ### Respect and protect users' confidentiality and privacy
+        </InsetText>
 
-        <Table>
-            <TableHeader>
-                <TableCell>Principle</TableCell>
-                <TableCell>Details</TableCell>
-            </TableHeader>
-            <TableRow>
-                <TableCell width="25%">
-                    MCCD security standard for system access
-                </TableCell>
-                <TableCell width="75%">
-                    * IAL (Identity Assurance Level) and AAL (Authenticator Assurance Level) are part of the guidelines (Publication 800-63) provided by the National Institute of Standards and Technology (NIST).
-                    * MCCD (Alpha phase) operates at IAL2-AAL2 and the system can only be accessed by the registered users requested via the proper channel. No other means of accessing the data is allowed.
-                    * Currently, there is an ongoing discussion with DHSC on whether to elevate the security standard to IAL3-ALL3.
-                </TableCell>
-            </TableRow>
-            <TableRow>
-                <TableCell width="25%">
-                    Authentication  
-                    (proof of concept)
-                </TableCell>
-                <TableCell width="75%">
-                    * AWS Cognito is a user management service provided by Amazon Web Services, designed to handle user authentication, authorization, and user data synchronization for web and mobile applications. It supports various identity providers and enables developers to create secure applications without managing complex user infrastructure.
-                    * By leveraging Cognito's Multi-Factor Authentication (MFA) feature, we have provided an additional layer of security during user authentication, ensuring a more robust protection for your web and mobile applications (IAL2-AAL2).
-                </TableCell>
-            </TableRow>
-            <TableRow>
-                <TableCell width="25%">
-                    Authentication  
-                    (to be)
-                </TableCell>
-                <TableCell width="75%">
-                    * Three viable authentication options have been compared:
-                    
-                    <ZoomImage alt="Three viable authentication options compared" small={'/artefacts/images/tech-auth-options-considered.jpg'} medium={'/artefacts/images/tech-auth-options-considered.jpg'} />
-                </TableCell>
-            </TableRow>
-        </Table>
+        <InsetText>
+    
+            ### Working in the open
+            Some inset text Scelerisque in dictum non consectetur. Ante in nibh mauris cursus mattis molestie a iaculis at. Quis
+            viverra nibh cras pulvinar.
 
-        ### Working in the open
+            <Details title={'Our principles for working in the open'}>
 
-        <Table>
-            <TableHeader>
-                <TableCell>Principle</TableCell>
-                <TableCell>Details</TableCell>
-            </TableHeader>
-            <TableRow>
-                <TableCell width="25%">
-                    Technology considerations
-                </TableCell>
-                <TableCell width="75%">
-                    * Hosted by Amazon Web Services (Public Cloud First Policy)
-                    * Builds to provide end-to-end, seamless and integrated Digital Service (GDS Design Principle of Designing Services Not Websites)
-                    * Internet-facing accessible web portal to View/Submit/Edit MCCD (GDS Principle of This is for Everyone)
-                    * Asynchronous services (AWS Well-Architected – Performance Pillar and NHS Technology Standard of enabling infrastructure that supports technical evolution, financial investment and resilience)
-                    * Implemented in Java using Open-Source components (GDS Principle of Make Things Open)
-                    * Reuse existing services (Leveraged BSA Common components where appropriate)
-                </TableCell>
-            </TableRow>
-            <TableRow>
-                <TableCell>
-                    Open-source design
-                </TableCell>
-                <TableCell>
-                    * Prototype code files all stored on the NHS BSA GitHub space
-                    * We plan to open-source access to the prototype in the browser
-                    * Potential to open-source access to our design histories
-                </TableCell>
-            </TableRow>
-            <TableRow>
-                <TableCell>
-                    Making source code open
-                </TableCell>
-                <TableCell>
-                    Our open-source repository is not currently public as we are in the process of preparing our source code for open access, hence it remains in a private repository.
+                <Table>
+                    <TableHeader>
+                        <TableCell>Principle</TableCell>
+                        <TableCell>Details</TableCell>
+                    </TableHeader>
+                    <TableRow>
+                        <TableCell width="25%">
+                            Technology considerations
+                        </TableCell>
+                        <TableCell width="75%">
+                            * Hosted by Amazon Web Services (Public Cloud First Policy)
+                            * Builds to provide end-to-end, seamless and integrated Digital Service (GDS Design Principle of Designing Services Not Websites)
+                            * Internet-facing accessible web portal to View/Submit/Edit MCCD (GDS Principle of This is for Everyone)
+                            * Asynchronous services (AWS Well-Architected – Performance Pillar and NHS Technology Standard of enabling infrastructure that supports technical evolution, financial investment and resilience)
+                            * Implemented in Java using Open-Source components (GDS Principle of Make Things Open)
+                            * Reuse existing services (Leveraged BSA Common components where appropriate)
+                        </TableCell>
+                    </TableRow>
+                    <TableRow>
+                        <TableCell>
+                            Open-source design
+                        </TableCell>
+                        <TableCell>
+                            * Prototype code files all stored on the NHS BSA GitHub space
+                            * We plan to open-source access to the prototype in the browser
+                            * Potential to open-source access to our design histories
+                        </TableCell>
+                    </TableRow>
+                    <TableRow>
+                        <TableCell>
+                            Making source code open
+                        </TableCell>
+                        <TableCell>
+                            Our open-source repository is not currently public as we are in the process of preparing our source code for open access, hence it remains in a private repository.
+                
+                            We are working on the necessary steps to transition it to an open repository.  
+
+                            Our current actions include: 
+
+                            * Scanning existing repositories to detect any potential data leaks. 
+                            * Implementing GitLeaks as a pre-commit hook to prevent the accidental inclusion of secrets in our commits. 
+                            * Anonymizing code contributors for both frontend and backend APIs to maintain privacy. 
+                            * Resolving any GitLeaks issues identified in our frontend and backend APIs. 
+                            * Upgrade to the latest Java version (JDK 17) to reduce code vulnerability
+                            * Addressing and remediating vulnerabilities found within the APIs.
+
+                            Once these measures are successfully implemented, we will conduct a thorough vulnerability assessment of the code in compliance with the BSA Open-Source policy before making the repository available publicly.
+                        </TableCell>
+                    </TableRow>
+                </Table>
+            
+            </Details>
         
-                    We are working on the necessary steps to transition it to an open repository.  
+        </InsetText>
 
-                    Our current actions include: 
+        <InsetText>
+    
+            ### Choose the right tools and technology
+            Some inset text Scelerisque in dictum non consectetur. Ante in nibh mauris cursus mattis molestie a iaculis at. Quis
+            viverra nibh cras pulvinar.
 
-                    * Scanning existing repositories to detect any potential data leaks. 
-                    * Implementing GitLeaks as a pre-commit hook to prevent the accidental inclusion of secrets in our commits. 
-                    * Anonymizing code contributors for both frontend and backend APIs to maintain privacy. 
-                    * Resolving any GitLeaks issues identified in our frontend and backend APIs. 
-                    * Upgrade to the latest Java version (JDK 17) to reduce code vulnerability
-                    * Addressing and remediating vulnerabilities found within the APIs.
+            <Details title={'Our principles for technology choices'}>
 
-                    Once these measures are successfully implemented, we will conduct a thorough vulnerability assessment of the code in compliance with the BSA Open-Source policy before making the repository available publicly.
-                </TableCell>
-            </TableRow>
-        </Table>
+                <Table>
+                    <TableHeader>
+                        <TableCell>Principle</TableCell>
+                        <TableCell>Details</TableCell>
+                    </TableHeader>
+                    <TableRow>
+                        <TableCell width="25%">
+                            High availability and fault tolerant service
+                        </TableCell>
+                        <TableCell width="75%">
+                            We've done the following to make sure our service is both highly available and fault-tolerant:
+                            
+                            * Utilise AWS Cloud Services: We have leveraged AWS's high availability and fault-tolerant infrastructure to ensure that our service is always available to our customers.
+                            * Use Multiple AZs: We have deployed our resources across multiple AWS Availability Zones (AZs) within a region. This ensures that if one or more AZs experience downtime, our services will remain available.
+                            * Monitor Resources: We use AWS CloudWatch to monitor our resources and detect anomalies before they become major issues. We have set up notifications to alert us of potential issues so that we can act before they impact our services.
+                            * Data Backup: We also have backup strategies in place to ensure that data is protected, and we can quickly restore our services in the event of data loss.
+                            * Implement Automatic Failover: We have planned to implement AWS services like Amazon Route 53, Amazon RDS, and Amazon Elastic Load Balancer that automatically detect and route traffic to healthy instances in the event of a failure. This reduces the time it takes to recover from an outage and ensures our services remain available.
+
+                            By taking these steps, we have planned to make our service highly available and fault-tolerant, providing our customers with uninterrupted service and ensuring their satisfaction with our service.
+                        </TableCell>
+                    </TableRow>
+                    <TableRow>
+                        <TableCell width="25%">
+                            Deployment pipeline
+                        </TableCell>
+                        <TableCell width="75%">
+                            * Implemented a streamlined code deployment pipeline for enhanced efficiency
+                            * Established quality assurance protocols prior to merging with Release/Main Branches
+                            * Simulate real-world conditions by testing the service in an environment closely mirroring live production
+                            * Experienced a reduced downtime of ~2 hours during production deployment
+                            * Strategically schedule deployments during early morning or late-night hours to minimize client disruption
+                        </TableCell>
+                    </TableRow>
+                </Table>
+            
+            </Details>
         
-        ### Choose the right tools and technology
-
-        <Table>
-            <TableHeader>
-                <TableCell>Principle</TableCell>
-                <TableCell>Details</TableCell>
-            </TableHeader>
-            <TableRow>
-                <TableCell width="25%">
-                    High availability and fault tolerant service
-                </TableCell>
-                <TableCell width="75%">
-                    We've done the following to make sure our service is both highly available and fault-tolerant:
-                    
-                    * Utilise AWS Cloud Services: We have leveraged AWS's high availability and fault-tolerant infrastructure to ensure that our service is always available to our customers.
-                    * Use Multiple AZs: We have deployed our resources across multiple AWS Availability Zones (AZs) within a region. This ensures that if one or more AZs experience downtime, our services will remain available.
-                    * Monitor Resources: We use AWS CloudWatch to monitor our resources and detect anomalies before they become major issues. We have set up notifications to alert us of potential issues so that we can act before they impact our services.
-                    * Data Backup: We also have backup strategies in place to ensure that data is protected, and we can quickly restore our services in the event of data loss.
-                    * Implement Automatic Failover: We have planned to implement AWS services like Amazon Route 53, Amazon RDS, and Amazon Elastic Load Balancer that automatically detect and route traffic to healthy instances in the event of a failure. This reduces the time it takes to recover from an outage and ensures our services remain available.
-
-                    By taking these steps, we have planned to make our service highly available and fault-tolerant, providing our customers with uninterrupted service and ensuring their satisfaction with our service.
-                </TableCell>
-            </TableRow>
-            <TableRow>
-                <TableCell width="25%">
-                    Deployment pipeline
-                </TableCell>
-                <TableCell width="75%">
-                    * Implemented a streamlined code deployment pipeline for enhanced efficiency
-                    * Established quality assurance protocols prior to merging with Release/Main Branches
-                    * Simulate real-world conditions by testing the service in an environment closely mirroring live production
-                    * Experienced a reduced downtime of ~2 hours during production deployment
-                    * Strategically schedule deployments during early morning or late-night hours to minimize client disruption
-                </TableCell>
-            </TableRow>
-        </Table>
+        </InsetText>
     
     </GridColumn>
 

@@ -114,9 +114,9 @@ html {
   scroll-behavior: smooth;
 }
 
-div.govuk-grid-column-full > h2 {
-  margin-top: 50px;
-}
+h2.govuk-heading-l { margin-top: 50px; }
+h3.govuk-heading-m { margin-top: 30px; }
+h4.govuk-heading-s { margin-top: 30px; }
 
 .govuk-header__link, .govuk-header__link--homepage {
   &:hover {
@@ -150,6 +150,15 @@ li::marker {
   }
 }
 
+.govuk-inset-text {
+  > details {
+    div.govuk-details__text {
+      border-left: none;
+      padding-left: 25px;
+    }
+  }
+}
+
 /* SITEWIDE COMPONENTS */
 
 div.page-intro {
@@ -177,9 +186,15 @@ a.signpost {
   text-decoration: none;
   
   h3, h4 {
+    margin-bottom: 0;
     margin-bottom: 10px;
     color: $govuk-link-colour;
     text-decoration: underline;
+
+    &.govuk-heading-m,
+    &.govuk-heading-s {
+      margin-top: 0;
+    }
   }
 
   p {
@@ -211,7 +226,13 @@ a.next-page {
   text-decoration: none;
   
   h3, h4 {
+    margin-top: 0;
     margin-bottom: 10px;
+    
+    &.govuk-heading-m,
+    &.govuk-heading-s {
+      margin-top: 0;
+    }
   }
   
   p {
