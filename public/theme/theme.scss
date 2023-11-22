@@ -168,8 +168,13 @@ div.page-intro {
 
 nav.in-page-nav {
   h4 {
+    margin-top: 0;
     margin-bottom: 0.5rem;
     font-size: 16px;
+    
+    &.govuk-heading-s {
+      margin-top: 0;
+    }
   }
 
   ul {
@@ -259,18 +264,15 @@ a.next-page {
   
   p {
     margin-bottom: 0;
-    
-    span {
-      color: $govuk-link-colour;
-      text-decoration: underline;
-    }
+    color: $govuk-link-colour;
+    text-decoration: underline;
   }
   
   &:hover {
     border-color: $govuk-success-colour;
     background-color: $mccd-light-green;
     
-    p span {
+    p {
       color: $govuk-success-colour;
     }
     
@@ -282,6 +284,25 @@ a.next-page {
   &:focus {
     background-color: $mccd-lightest-grey;
     box-shadow: none;
+  }
+
+}
+
+a.previous-page {
+  @extend .next-page;
+
+  border-left: none;
+  border-right: 10px solid $mccd-light-grey;
+  padding-left: 50px;
+  background-color: $mccd-lightest-grey;
+  text-align: right;
+  text-decoration: none;
+
+  &::after {
+    left: 10px;
+    right: unset;
+    color: $govuk-link-colour;
+    content: "\f137";
   }
 
 }

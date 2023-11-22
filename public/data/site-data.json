@@ -324,6 +324,16 @@
   {
     "slug": [
       "understanding",
+      "themes-of-investigation"
+    ],
+    "url": "/understanding/themes-of-investigation",
+    "file": "public/content/understanding/themes-of-investigation.mdx",
+    "title": "NHS BSA Project | Hippo Digital",
+    "description": "The home page description"
+  },
+  {
+    "slug": [
+      "understanding",
       "users"
     ],
     "url": "/understanding/users",
