@@ -245,7 +245,7 @@ a.next-page {
   &::after {
     @extend .fas;
     position: absolute;
-    top: calc(50% - 10px);
+    top: calc(50% - 16px);
     right: 10px;
     color: $govuk-link-colour;
     font-size: 2rem;
@@ -292,9 +292,9 @@ a.previous-page {
   @extend .next-page;
 
   border-left: none;
-  border-right: 10px solid $mccd-light-grey;
+  border-right: 10px solid $mccd-lightest-grey;
   padding-left: 50px;
-  background-color: $mccd-lightest-grey;
+  background-color: $govuk-body-background-colour;
   text-align: right;
   text-decoration: none;
 
