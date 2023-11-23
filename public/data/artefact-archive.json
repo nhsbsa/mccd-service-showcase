@@ -48,6 +48,14 @@
     "type": "PDF"
   },
   {
+    "title": "Content style guide",
+    "description": "To ensure consistent use of key terminology",
+    "url": "/artefacts/pdf/MCCD-MES-style-guide.pdf",
+    "activity": "Design and iterate",
+    "focus": "Design",
+    "type": "PDF"
+  },
+  {
     "title": "Prototype",
     "description": "The prototype provides an early interactive model to enable us to visualise and research options in breadth and depth (Password: NHSBSA)",
     "url": "https://mccd-govuk.herokuapp.com/",
