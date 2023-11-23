@@ -62,6 +62,26 @@ description: The home page description
 </GridRow>
 
 <GridRow>
+
+    <GridColumn width={'full'}>
+        ## Beta backlog
+    </GridColumn>
+    
+    <GridColumn width={'3/4'}>
+        At a high-level, we have assessed the beta backlog by expected priority and sizing:
+    </GridColumn>
+
+    <GridColumn width={'full'}>
+        <ReadData apiEndpoint={'/api/data/beta-backlog'}>
+            <SortableLists dataFilter={"slug:beta-backlog"} sortBy={{
+                'priority': ['now', 'next', 'later'], 'sizing': ['small', 'medium', 'large', 'unknown']
+            }} className="sortable-cards" />
+        </ReadData>
+    </GridColumn>
+
+</GridRow>
+
+<GridRow>
     <GridColumn width={'full'}>
         ---
     </GridColumn>
