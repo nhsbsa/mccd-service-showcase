@@ -51,10 +51,15 @@ $govuk-notification-banner-border: $govuk-brand-colour;
 
 /*DASHBOARD*/
 $govuk-summary-card-title-background: $govuk-canvas-background-colour;
-//$govuk-tag-green: #00703c;
-//$govuk-tag-yellow: #ffdd00;
-//$govuk-tag-grey: #505a5f;
-//$govuk-tag-blue: #1d70b8;
+$govuk-tag-green: #005a30;
+$govuk-tag-green-bg: #cce2d8;
+$govuk-tag-red: #942514;
+$govuk-tag-red-bg: #f6d7d2;
+$govuk-tag-yellow: #594d00;
+$govuk-tag-yellow-bg: #fff7bf;
+$govuk-tag-blue: #144e81;
+$govuk-tag-blue-bg: #d2e2f1;
+// $govuk-tag-grey: #505a5f;
 
 /* MCCD COLOURS */
 $mccd-lightest-grey: #ececec;
@@ -359,6 +364,95 @@ div.person-profile {
       &:first-of-type {
         font-size: 1.2rem;
         font-weight: bold;
+      }
+    }
+  }
+}
+
+// BELOW IS A BIT HACKY
+// SHOULD BE MORE LOGIC IN COMPONENTS > SORTABLELISTS.TSX BUT RAN OUT OF TIME
+
+ul.sortable-cards {
+  li {
+    display: block;
+    border: 1px solid $mccd-light-grey;
+    padding: 10px;
+    box-shadow: $mccd-lightest-grey 2px 2px 2px;
+    font-size: 1rem;
+
+    .tags {
+      margin-top: 5px;
+
+      .govuk-tag {
+        margin-right: 5px;
+        font-size: 0.9rem;
+
+        &.priority {
+          background-color: $govuk-tag-red-bg;
+          color: $govuk-tag-red;
+        }
+        
+        &.sizing {
+          background-color: $mccd-lightest-grey;
+          color: $mccd-mid-grey;
+        }
+      }
+    }
+
+    &[data-priority="next"] {
+      background-color: $mccd-lightest-grey;
+
+      .tags {
+        .govuk-tag {
+          &.priority {
+            background-color: $govuk-tag-yellow-bg;
+            color: $govuk-tag-yellow;
+          }
+        }
+      }
+    }
+
+    &[data-priority="later"] {
+      background-color: $mccd-light-grey;
+
+      .tags {
+        .govuk-tag {
+          &.priority {
+            background-color: $govuk-tag-blue-bg;
+            color: $govuk-tag-blue;
+          }
+        }
+      }
+    }
+
+    &[data-sizing="small"] {
+      .tags {
+        .govuk-tag {
+          &.sizing {
+            background-color: $govuk-tag-green-bg;
+            color: $govuk-tag-green;
+          }
+        }
+      }
+    }
+    &[data-sizing="medium"] {
+      .tags {
+        .govuk-tag {
+          &.sizing {
+            background-color: $govuk-tag-yellow-bg;
+            color: $govuk-tag-yellow;
+          }
+        }
+      }
+    }
+    &[data-sizing="large"] {
+      .tags {
+        .govuk-tag {
+          &.sizing {
+            background-color: $govuk-tag-red-bg;
+            color: $govuk-tag-red;
+          }
+        }
       }
     }
   }

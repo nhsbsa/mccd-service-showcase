@@ -7,12 +7,25 @@ import { DataItem, DataType } from '@/types';
 import Link from 'next/link';
 import { kebabCase } from 'lodash';
 
+// This is due to Ben's poor Typescript. To be improved. :-O
+const Widths = {
+  '1/4': 'govuk-grid-column-one-quarter',
+  '1/3': 'govuk-grid-column-one-third',
+  '2/3': 'govuk-grid-column-two-thirds',
+  '1/2': 'govuk-grid-column-one-half',
+  '3/4': 'govuk-grid-column-three-quarters',
+  full: 'govuk-grid-column-full',
+};
+
 type TSortableList = {
   sortBy?: DataItem
   titleField?: string
   linkField?: string
   sortText?: string
   data?: DataType
+  className?: string
+  priority?: string
+  sizing?: string
 }
 function SortableLists({
   sortBy = {},
@@ -20,6 +33,9 @@ function SortableLists({
   data = [],
   titleField = 'title',
   linkField = '',
+  className = '',
+  priority = 'priority',
+  sizing = 'sizing',
 }:TSortableList) {
   const [listData, setListData] = useState<DataType>([]);
   // eslint-disable-next-line max-len
@@ -53,11 +69,17 @@ function SortableLists({
     groupBy(listData, sortKey);
   }, [listData, sortBy, groupBy]);
 
+  // I'm sure there's a better way to do this
+  let colWidth: keyof typeof Widths = '1/2';
+  colWidth = searchResults.length === 3 ? '1/3' : colWidth;
+  colWidth = searchResults.length > 3 ? '1/4' : colWidth;
+
   const handleSelect = (e: React.ChangeEvent<HTMLSelectElement>) => {
     e.preventDefault();
     const sortValue = e.target.value;
     groupBy(listData, sortValue);
   };
+
   const makeSort = () => (
     <div key="sort" className="govuk-form-group">
       <label className="govuk-label" htmlFor="sort">
@@ -77,18 +99,27 @@ function SortableLists({
       </select>
     </div>
   );
+
   const makeLists = () => (searchResults ? (
     <GridRow>
       {searchResults.map((group, i) => (
-        <GridColumn key={`group-${i + 1}`} width="1/4">
+        <GridColumn key={`group-${i + 1}`} className={`group-${i + 1}`} width={colWidth}>
           <h3 className="govuk-heading-m">{_.capitalize(group[0] || '')}</h3>
-          <ul className="govuk-list govuk-list--spaced govuk-!-padding-top-4">
+          <ul className={`govuk-list govuk-list--spaced govuk-!-padding-top-4 ${className}`}>
             {group[1]
               .map((groupItem, index:number) => (
-                <li key={`list-item-${index + 1}`}>
+                <li key={`list-item-${index + 1}`} data-priority={groupItem[priority]} data-sizing={groupItem[sizing]}>
                   {groupItem[linkField]
                     ? <Link data-testid={kebabCase(groupItem[titleField])} href={`${groupItem[linkField]}`} title={groupItem[titleField]}>{groupItem[titleField]}</Link>
                     : groupItem[titleField]}
+                  <div className="tags">
+                    <strong className="govuk-tag priority">
+                      {`${groupItem[priority]}`}
+                    </strong>
+                    <strong className="govuk-tag sizing">
+                      {`${groupItem[sizing]}`}
+                    </strong>
+                  </div>
                 </li>
               ))}
           </ul>

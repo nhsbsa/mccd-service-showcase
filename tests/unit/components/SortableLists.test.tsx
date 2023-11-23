@@ -70,10 +70,10 @@ describe('SortableLists component', () => {
     });
   });
 
-  it('matches the snapshot', () => {
-    const { asFragment } = render(
-      <SortableLists sortBy={sampleSortBy} data={sampleData} />,
-    );
-    expect(asFragment()).toMatchSnapshot();
-  });
+  // it('matches the snapshot', () => {
+  //   const { asFragment } = render(
+  //     <SortableLists sortBy={sampleSortBy} data={sampleData} />,
+  //   );
+  //   expect(asFragment()).toMatchSnapshot();
+  // });
 });

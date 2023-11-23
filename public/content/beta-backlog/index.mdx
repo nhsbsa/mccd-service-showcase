@@ -19,20 +19,8 @@ breadcrumbs:
     </GridColumn>
 </GridRow>
 
-<GridRow>
-
-    <GridColumn width={'3/4'}>
-
-        <WarningCallout title={"To be updated"}>
-            The content for this page will be populated on Monday 13 Nov 2023 from the recent beta planning outputs
-        </WarningCallout>
-    
-    </GridColumn>
-
-</GridRow>
-
-<ReadData>
-    <SortableLists dataFilter={"slug:features"} sortBy={{
-        'priority': ['now', 'next', 'later'], 'value': ['high value', 'low value'], 'complexity': ['High complexity', 'medium complexity', 'low complexity'], 'product': []
-    }}/>
+<ReadData apiEndpoint={'/api/data/beta-backlog'}>
+    <SortableLists dataFilter={"slug:beta-backlog"} sortBy={{
+        'priority': ['now', 'next', 'later'], 'sizing': ['small', 'medium', 'large', 'unknown']
+    }} className="sortable-cards" />
 </ReadData>
