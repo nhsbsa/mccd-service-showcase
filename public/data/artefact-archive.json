@@ -48,6 +48,14 @@
     "type": "PDF"
   },
   {
+    "title": "Content style guide",
+    "description": "To ensure consistent use of key terminology",
+    "url": "/artefacts/pdf/MCCD-MES-style-guide.pdf",
+    "activity": "Design and iterate",
+    "focus": "Design",
+    "type": "PDF"
+  },
+  {
     "title": "Prototype",
     "description": "The prototype provides an early interactive model to enable us to visualise and research options in breadth and depth (Password: NHSBSA)",
     "url": "https://mccd-govuk.herokuapp.com/",
@@ -62,5 +70,29 @@
     "activity": "Develop and test",
     "focus": "Technical",
     "type": "PDF"
+  },
+  {
+    "title": "Beta planning board",
+    "description": "A snapshot of the Miro board used to iterate and validate the beta planning activity",
+    "url": "/artefacts/pdf/beta-planning-snapshot-231123.pdf",
+    "activity": "Plan and demo",
+    "focus": "Product",
+    "type": "PDF"
+  },
+  {
+    "title": "'As is' service map (work in progress)",
+    "description": "",
+    "url": "/artefacts/pdf/mccd-as-is-service-map-wip.pdf",
+    "activity": "Design and iterate",
+    "focus": "Design",
+    "type": "Website"
+  },
+  {
+    "title": "'To be' service map (work in progress)",
+    "description": "",
+    "url": "/artefacts/pdf/mccd-to-be-service-map-wip.pdf",
+    "activity": "Design and iterate",
+    "focus": "Design",
+    "type": "Website"
   }
 ]
