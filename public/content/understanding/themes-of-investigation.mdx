@@ -44,7 +44,7 @@ description: The home page description
 
         ### This relates to user needs of 'speed' and 'accuracy'
 
-        * As an AP I need to complete the MCCD as quickly as possible so that I can move onto working on my next task.
+        * As an attending practitioner (AP) I need to complete the Medical certificate of cause of death (MCCD) as quickly as possible so that I can move onto working on my next task.
         * As an AP I need to complete the MCCD accurately first time, so I don't have to waste my time re-doing it causing delays to others.
 
         ### What we tested
@@ -52,27 +52,30 @@ description: The home page description
         * Cause of death questions (1a-c, and 2) in a one question per page format
 
         <GridRow>
-            <GridColumn width={'1/3'}>
-                <ZoomImage alt="TBC" small={'https://placehold.co/600x400?text=TBC'} medium={'https://placehold.co/900x600?text=TBC'} />
+            <GridColumn width={'1/4'}>
+                <ZoomImage alt="Iteration 3 - cause of death 1a" small={'/artefacts/images/it3-screen-1.png'} medium={'/artefacts/images/it3-screen-1.png'} />
             </GridColumn>
-            <GridColumn width={'1/3'}>
-                <ZoomImage alt="TBC" small={'https://placehold.co/600x400?text=TBC'} medium={'https://placehold.co/900x600?text=TBC'} />
+            <GridColumn width={'1/4'}>
+                <ZoomImage alt="Iteration 3 - cause of death 1b" small={'/artefacts/images/it3-screen-2.png'} medium={'/artefacts/images/it3-screen-2.png'} />
             </GridColumn>
-            <GridColumn width={'1/3'}>
-                <ZoomImage alt="TBC" small={'https://placehold.co/600x400?text=TBC'} medium={'https://placehold.co/900x600?text=TBC'} />
+            <GridColumn width={'1/4'}>
+                <ZoomImage alt="Iteration 3 - cause of death 1c" small={'/artefacts/images/it3-screen-3.png'} medium={'/artefacts/images/it3-screen-3.png'} />
             </GridColumn>
-            <GridColumn width={'1/3'}>
-                <ZoomImage alt="TBC" small={'https://placehold.co/600x400?text=TBC'} medium={'https://placehold.co/900x600?text=TBC'} />
+            <GridColumn width={'1/4'}>
+                <ZoomImage alt="Iteration 3 - secondary cause of death" small={'/artefacts/images/it3-screen-4.png'} medium={'/artefacts/images/it3-screen-4.png'} />
             </GridColumn>
         </GridRow>
 
-        Expansion text  
+    <InsetText>
+        <Details title={'Design rationale and insights'}>  
         Initial designs for the digital MCCD followed a one question per page format, in line with good practice. When testing the full question set, most of the form was completed with minimal friction. However, questions relating to the cause of death were the exception.
+        </Details>
+    </InsetText>
 
         ### What we found 
 
         * Separating the cause of death questions, prevent users from easily identifying the correct narrative. 
-        * This makes completing the MCCD more difficult/slower and increases risk of mistakes. 
+        * TThis makes completing the MCCD more difficult and slower, and increases the risk of mistakes. 
 
         <WarningCallout title={"Dual role AP"} className="quote">
             “I think you'll get fewer confusions if it's on one page. Because that's how that paper form is, and it prompts people to think about the order of business.”
@@ -82,10 +85,13 @@ description: The home page description
             “It would be nice to see these questions played out in one menu because this going back and forth is ok, functional and nice and clear but [its a pain]... I wouldn't have misinterpreted it, if I'd seen the next question later on.”
         </WarningCallout>
 
-        Expansion text
-        We found one page per question was problematic for the cause of death questions (1a, 1b, 1c and part 2). Separating these consistently these caused confusion and created friction in the journey for users, who spent time going and back and forth between the questions, often amending previously inputted content.  
+     <InsetText>
+        <Details title={'Research insights'}>  
+        We found one page per question was problematic for the cause of death questions (1a, 1b, 1c and part 2). Separating these questions consistently caused confusion and created friction in the journey for users. They spent time going back and forth between the questions, often amending previously input content.  
+        </Details>
+    </InsetText>
 
-        We tested several variations and found that including all questions (part 1 and 2) on the same page made was most optimal, as it allowed users to tell a cohesive narrative which build from question to question. 
+        We tested several variations and found that including all questions (part 1 and 2) on the same page was the most optimal journey. It allowed users to tell a cohesive narrative building upon each question.
 
         <WarningCallout title={"Dual role AP"} className="quote">
             “Ah right, so I got confused here, diabetes should be going in here. If you laid it out, so it looks more like the paper one. Maybe if you had this bit more clearly question one and then question 2 on the same page, I think that would probably make more sense than separating them.”
@@ -93,25 +99,28 @@ description: The home page description
 
         <GridRow>
             <GridColumn width={'1/2'}>
-                <ZoomImage alt="TBC" small={'https://placehold.co/600x400?text=TBC'} medium={'https://placehold.co/900x600?text=TBC'} />
+                <ZoomImage alt="Iteration 4 - primary and secondary causes of death shown together with time between onset and death" small={'/artefacts/images/it4-cause-death.png'} medium={'/artefacts/images/it4-cause-death.png'} />
             </GridColumn>
         </GridRow>
 
         We've recently iterated further, to improve question clarity and data quality by: 
 
-        * Adding 'time since onset' onto the same line as the condition it relates to.
-        * Allowing users to specify the unit of measurement.
+        * adding 'time since onset' onto the same line as the condition it relates to
+        * allowing users to specify the unit of measurement
         
         <WarningCallout title={"ME"} className="quote">
             “You need the onset to be clearly due to the cause [feels onset being under COD makes it harder to interpret]”
         </WarningCallout>
 
-        Expansion text  
-        This was after receiving feedback from users that placing the time of onset under the field it relates to is confusing, we've moved this to the same row. We've also tested how we might improve data accuracy for ONS, by including units of measurement in the time field.  This still requires further testing. 
-        
+    <InsetText>
+        <Details title={'Design rationale'}> 
+        In feedback, users said that placing the time of onset field under the input field it relates to is confusing. We've now moved the time of onset field to the same row. We've also tested how we might improve data accuracy for ONS by including units of measurement in the time field.  This still requires further testing. 
+        </Details>
+    </InsetText>
+
         <GridRow>
             <GridColumn width={'1/2'}>
-                <ZoomImage alt="TBC" small={'https://placehold.co/600x400?text=TBC'} medium={'https://placehold.co/900x600?text=TBC'} />
+                <ZoomImage alt="Version 10 - updated to GDS styles showing all causes of death together and allowing selection of units of time" small={'/artefacts/images/V10-cause-of-death.png'} medium={'/artefacts/images/V10-cause-of-death.png'} />
             </GridColumn>
         </GridRow>
 
@@ -129,12 +138,15 @@ description: The home page description
 
         * Following the last alpha assessment, we focused more on how a digital MCCD could fit into the wider DCR journey.
 
-        Expansion text  
-        In the initial alpha, we spent time focusing on understanding questions within the form. Considering the various points of interactions between APs and MEs during the course on an MCCD scrutiny, we needed to explore how these handoffs could happen. 
+    <InsetText>
+        <Details title={'Research insights'}>  
+        In the initial alpha, we spent time focusing on understanding questions within the form. We considered the points of interactions between APS and MEs during an MCCD scrutiny. We needed to explore how these handoffs could happen.
+        </Details>
+    </InsetText>
 
         ### This relates to user needs of 'knowing when to act' 
 
-        * As an AP, I need to know when an MEO or ME want me to make an edit to the MCCD so that I do not cause delays in the MCCD being sent to the registrar. 
+        * As an AP, I need to know when a medical examiner officer or ME want me to make an edit to the MCCD so that I do not cause delays in the MCCD being sent to the registrar. 
         * As an ME, I need to know when an MCCD is ready for scrutiny, so that I can review the MCCD and respond accordingly.  
 
         ### What we tested 
@@ -144,14 +156,17 @@ description: The home page description
         1. concept testing the initial 'to be' journey (image 1)
         2. concept testing an initial dashboard design (image 2)
 
-        Expansion text  
+    <InsetText>
+        <Details title={'Participants in research'}>  
         We involved both APs and MEs in both streams to ensure we could explore handoffs and potential risks in depth.  
+        </Details>
+    </InsetText>    
 
         Image 1: The initial 'to be' journey used in concept testing
 
         <GridRow>
             <GridColumn width={'full'}>
-                <ZoomImage alt="TBC" small={'https://placehold.co/600x200?text=TBC'} medium={'https://placehold.co/900x300?text=TBC'} />
+                <ZoomImage alt="To-be user journey map" small={'/artefacts/images/initial-to-be.png'} medium={'/artefacts/images/initial-to-be.png'} />
             </GridColumn>
         </GridRow>
         
@@ -159,16 +174,16 @@ description: The home page description
 
         <GridRow>
             <GridColumn width={'1/2'}>
-                <ZoomImage alt="TBC" small={'https://placehold.co/600x400?text=TBC'} medium={'https://placehold.co/900x600?text=TBC'} />
+                <ZoomImage alt="Dashboard showing MCCDs in multiple stages" small={'/artefacts/images/initial-dasboard.png'} medium={'/artefacts/images/initial-dasboard.png'} />
             </GridColumn>
         </GridRow>
 
         We found: 
 
         * our assumption that the MCCD triggered scrutiny was not always correct
-        * Mental models and reception of the ideas varied – depending on how sophistication of existing processes and systems
-        * We need to develop a product that is flexible enough to work irrespective of system sophistication
-        * We need to consider the role of MEOs in the process
+        * mental models and reception of the ideas varied – depending on the sophistication of existing processes and systems
+        * we need to develop a product that is flexible enough to work irrespective of system sophistication
+        * we need to consider the role of medical examiner officers in the process
 
         <WarningCallout title={"Dual role GP"} className="quote">
             “I can see how this could be useful for hospices (if they could get the certificate ready in this platform, we'd just review it from here and approve)”
@@ -182,24 +197,30 @@ description: The home page description
             “Making that person write the details could feel like a waste of time - making them summarise the conversation again after the referral”
         </WarningCallout>
 
-        Expansion text  
-        We consistently found that responses varied according to participant's mental models of MCCD completion. For those with little experience of ME scrutiny or where pilot systems were less integrated between MEs and community APs (such as GPs or those working in hospices), our initial design of the completed MCCD triggering scrutiny and feedback happening within the MCCD, was reasonably well received. In contrast, we found those who worked in areas with more sophisticated integration between MEs and community-based APs found the 'to be' concept disconcerting, as it seemed to duplicate elements of scrutiny and discussion that would have happened before the MCCD was completed. This underscored the importance of developing a product that works for users with different levels of integration. 
+    <InsetText>
+        <Details title={'Research insights'}>   
+        We consistently found that responses varied according to participant's mental models of MCCD completion. For those with little experience of ME scrutiny or where pilot systems were less integrated between MEs and community APs (such as GPs or those working in hospices), our initial design of the completed MCCD triggering scrutiny, and feedback happening within the MCCD, was reasonably well received. In contrast, we found those who worked in areas with more sophisticated integration between MEs and community-based APs found the 'to be' concept disconcerting. For them it seemed to duplicate elements of scrutiny and discussion that would have happened before the MCCD was completed. This underscored the importance of developing a product that works for users with different levels of integration. 
+        </Details>
+    </InsetText>
 
-        Whilst much of the design could work for various integration scenarios, one challenge we may face is the requirement for MEs to complete a declaration (following review of the MCCD) to approve its content. For those who used their own systems to liaise with/agree the cause of death with the AP, completing the declaration was a duplication of work for the ME, who expected their MEO to be able to confirm that the MCCD matched the agreed proposed cause of death recorded on their systems. This is, however, a legal requirement. 
+        Whilst much of the design could work for various integration scenarios, one challenge we may face is the requirement for MEs to complete a declaration to approve its content (following review of the MCCD). For those who used their own systems to liaise with the AP and agree the cause of death, completing the declaration was a duplication of work for the ME. The ME expected their medical examiner office to be able to confirm that the MCCD matched the agreed proposed cause of death recorded on their systems. This is, however, a legal requirement. 
 
         We challenged our initial idea of a dashboard, testing both dashboard and non-dashboard designs.  
 
-        Expansion text
-        After initial testing, we continued to test ways of communicating MCCD transfers between MEs and APs, considering both dashboard and non-dashboard designs. In the dashboard design, the status labels gave users a visual indication of awaiting and/or having received a response. In contrast, the non-dashboard relied on communicating this solely via email notification, with MCCDs only being visible when the user had something to action.
+    <InsetText>
+        <Details title={'Research insights'}>  
+        After initial testing, we continued to test ways of communicating MCCD transfers between MEs and APs, considering both dashboard and non-dashboard designs. In the dashboard design, the status labels gave users a visual indication of waiting for a response and a response has been received. In contrast, the non-dashboard relied on communicating this solely via email notification, with MCCDs only being visible when the user had something to action.
+        </Details>
+    </InsetText>
 
         I4: (4a) AP initial view empty dashboard and (4b) with one case 'in Scrutiny'
 
         <GridRow>
             <GridColumn width={'1/2'}>
-                <ZoomImage alt="TBC" small={'https://placehold.co/600x400?text=TBC'} medium={'https://placehold.co/900x600?text=TBC'} />
+                <ZoomImage alt="Attending practitioner dashboard with no open cases" small={'/artefacts/images/4a-AP-dash.png'} medium={'/artefacts/images/4a-AP-dash.png'} />
             </GridColumn>
             <GridColumn width={'1/2'}>
-                <ZoomImage alt="TBC" small={'https://placehold.co/600x400?text=TBC'} medium={'https://placehold.co/900x600?text=TBC'} />
+                <ZoomImage alt="Attending practitioner dashboard with one case in scrutiny" small={'/artefacts/images/4b-AP-dash.png'} medium={'/artefacts/images/4b-AP-dash.png'} />
             </GridColumn>
         </GridRow>
 
@@ -207,10 +228,10 @@ description: The home page description
 
         <GridRow>
             <GridColumn width={'1/2'}>
-                <ZoomImage alt="TBC" small={'https://placehold.co/600x400?text=TBC'} medium={'https://placehold.co/900x600?text=TBC'} />
+                <ZoomImage alt="Medical examiner dashboard view with 'not started' cases" small={'/artefacts/images/5a-ME-dash.png'} medium={'/artefacts/images/5a-ME-dash.png'} />
             </GridColumn>
             <GridColumn width={'1/2'}>
-                <ZoomImage alt="TBC" small={'https://placehold.co/600x400?text=TBC'} medium={'https://placehold.co/900x600?text=TBC'} />
+                <ZoomImage alt="Medical examiner dashboard view with one case completed and one case 'not started'" small={'/artefacts/images/5b-ME-dash.png'} medium={'/artefacts/images/5b-ME-dash.png'} />
             </GridColumn>
         </GridRow>
 
@@ -218,11 +239,11 @@ description: The home page description
         
         <GridRow>
             <GridColumn width={'full'}>
-                <ZoomImage alt="TBC" small={'https://placehold.co/800x320?text=TBC'} medium={'https://placehold.co/1000x400?text=TBC'} />
+                <ZoomImage alt="Overview of a non-dashboard journey" small={'/artefacts/images/6-non-dashboard.png'} medium={'/artefacts/images/6-non-dashboard.png'} />
             </GridColumn>
         </GridRow>
 
-        Both options seemed viable from usability and concept testing, though participants tended to report preferring the dashboard design as relying solely on emails might result in missed actions or a degree of distrust  
+        Both options seemed viable from usability and concept testing. Although participants tended to report preferring the dashboard design, relying solely on emails might result in missed actions or a degree of distrust.
 
         <WarningCallout title={"AP"} className="quote">
             "You know, once these things are submitted, it's helpful to be able to check in and just know where things are up to. If it's just reliant on an e-mail being sent out those things not infrequently go to spam and as I've said, I have a degree of scepticism, when initially receiving emails like that. And so having a system that I can log into and go "OK, yeah, that's been accepted" is helpful as a second verifying thing that also what's said in this e-mail is also the case on my secure login."
@@ -240,7 +261,7 @@ description: The home page description
 
     <GridColumn width={'3/4'}>
 
-        Here we explored how we might reduce administrative burden for our users and support MCCD completers to submit more accurate MCCDs first time.
+        We explored how we might reduce the administrative burden for our users and support those completing an MCCD to submit accurate MCCDs first time.
 
         ### This relates to user needs of 'speed' and 'accuracy' 
 
@@ -253,23 +274,28 @@ description: The home page description
 
         We found address entry and input of personal (AP) data were both pain points in these early versions.  
 
-        Expansion text  
+    <InsetText>
+        <Details title={'Research insights'}>    
         Address entry was required at several points in the journey, including the AP's place of work and the location of death. APs rarely knew their full work address and the manual nature of input frustrated users. Similarly, as certain AP details are required for each MCCD submission (for example, name, GMC number, qualifications etc) having to repeatedly enter this information was frustrating. 
+        </Details>
+    </InsetText>
 
         The screen shots below show the four screens that APs would be asked to complete every time they filled out an MCCD.
 
         <GridRow>
             <GridColumn width={'1/3'}>
-                <ZoomImage alt="TBC" small={'https://placehold.co/600x400?text=TBC'} medium={'https://placehold.co/900x600?text=TBC'} />
+                <ZoomImage alt="Iteration 3 - APs enter full name " small={'/artefacts/images/AP-full-name.png'} medium={'/artefacts/images/AP-full-name.png'} />
             </GridColumn>
             <GridColumn width={'1/3'}>
-                <ZoomImage alt="TBC" small={'https://placehold.co/600x400?text=TBC'} medium={'https://placehold.co/900x600?text=TBC'} />
+                <ZoomImage alt="Iteration 3 - APs enter qualifications" small={'/artefacts/images/AP-qualification.png'} medium={'/artefacts/images/AP-qualification.png'} />
             </GridColumn>
             <GridColumn width={'1/3'}>
-                <ZoomImage alt="TBC" small={'https://placehold.co/600x400?text=TBC'} medium={'https://placehold.co/900x600?text=TBC'} />
+                <ZoomImage alt="Iteration 3 - APs enter GMC number" small={'/artefacts/images/AP-GMC.png'} medium={'/artefacts/images/AP-GMC.png'} />
             </GridColumn>
+        </GridRow>
+        <GridRow>
             <GridColumn width={'1/3'}>
-                <ZoomImage alt="TBC" small={'https://placehold.co/600x400?text=TBC'} medium={'https://placehold.co/900x600?text=TBC'} />
+                <ZoomImage alt="Iteration 3 - APs enter work address" small={'/artefacts/images/AP-work-address.png'} medium={'/artefacts/images/AP-work-address.png'} />
             </GridColumn>
         </GridRow>
 
@@ -279,15 +305,18 @@ description: The home page description
         * explored registration/account creation, as a means of collecting basic information
         * included a 'check your answer page within the journey, to enable details changes if needed
 
-        Expansion text  
+    <InsetText>
+        <Details title={'Research insights'}>   
         Collecting this information during registration meant that we'd only need to ask the four AP details questions once during registration reducing administrative labour. 
+        </Details>
+    </InsetText>
 
         <GridRow>
             <GridColumn width={'1/2'}>
-                <ZoomImage alt="TBC" small={'https://placehold.co/600x400?text=TBC'} medium={'https://placehold.co/900x600?text=TBC'} />
+                <ZoomImage alt="Version 10 - Post code search for AP work location" small={'/artefacts/images/AP-work-adress-lookup.png'} medium={'/artefacts/images/AP-work-adress-lookup.png'} />
             </GridColumn>
             <GridColumn width={'1/2'}>
-                <ZoomImage alt="TBC" small={'https://placehold.co/600x400?text=TBC'} medium={'https://placehold.co/900x600?text=TBC'} />
+                <ZoomImage alt="Version 10 - check AP details before creating a new MCCD" small={'/artefacts/images/AP-check-details.png'} medium={'/artefacts/images/AP-check-details.png'} />
             </GridColumn>
         </GridRow>
 
@@ -298,10 +327,13 @@ description: The home page description
         * explore allowing partial address look-up plus postcode. 
         * integrate with the Personal Demographics Service (PDS) 
 
-        Expansion text  
-        We found whilst some users know their work postcode, some are more familiar with the first line of the address. In future, we will explore whether allowing either postcode or partial address is feasible/increases usability. 
+    <InsetText>
+        <Details title={'Research insights'}>    
+        We found whilst some users know their work postcode, some are more familiar with the first line of the address. In future, we will explore whether allowing either postcode or partial address is feasible and increases usability. 
+        </Details>
+    </InsetText>
 
-        We've also been in contact with the Personal Demographics Service (PDS) team as we plan to explore integrating with PDS via API, to increase speed and accuracy of data entered, relating to the deceased's information. 
+        We've been in contact with the Personal Demographics Service (PDS) team as we plan to explore integrating with PDS via API. This will increase the speed and accuracy of the deceased's information entered.
 
     </GridColumn>
 
@@ -315,30 +347,33 @@ description: The home page description
 
     <GridColumn width={'3/4'}>
 
-        MCCDs queries and rejections are a key pain point across our user groups that cause rework for professionals involved in the death registration process and delays for those handling the deceased's funeral.  
+        MCCDs queries and rejections are a key pain point across our user groups. It causes rework for professionals involved in the death registration process and delays for those handling the deceased's funeral.  
 
-        Expansion text  
-        There can be a range of reasons from queries on handwritten content to missing information and challenge to the cause of death listed. During this Alpha, we considered how we might reduce this occurrence of these. 
+    <InsetText>
+        <Details title={'Research insights'}>    
+        There can be a range of reasons for rejections, from queries on handwritten content, missing information, and challenges to the listed cause of death. During this Alpha stage, we considered how we might reduce the occurrence of these rejections.
+        </Details>
+    </InsetText>
 
         ### This relates to user needs of 'accuracy' and 'receiving help' 
 
         * As an AP I need to complete the MCCD accurately first time, so I don't have to waste my time re-doing it causing delays to others.
-        * As an AP who does not complete MCCDs very often, I need help to complete the details of an MCCD outside of the COD so that silly mistakes such as abbreviations, and missing GMC number, do not cause the registrar to reject the MCCD and delay the informant from registering the death.
+        * As an AP who does not complete MCCDs very often, I need help to complete the details of an MCCD outside of the cause of death so that silly mistakes such as abbreviations, and missing GMC number, do not cause the registrar to reject the MCCD and delay the informant from registering the death.
         * As an AP with less experience of completing MCCDs, I need help to correctly write then MCCD, so that it does not get rejected and delay the informant from registering the death.
 
         ### What we explored
 
         The difficultly reported in interpreting handwritten documentation should be reduced or eliminated by moving from a paper to a digital MCCD.  
 
-        We worked closely with stakeholders such as GRO, ONS and the Welsh Government to determine the MCCD question protocol. This not only allowed us to remove unnecessary fields (for example, AP qualifications). It also allowed us to identify where fields were mandatory and use logic to help users reduce omissions that would cause an MCCD to be rejected/rework for the AP.
+        We worked closely with stakeholders such as General Register Office (GRO), Office for National Statistics (ONS) and the Welsh Government to determine the MCCD question protocol. This not only allowed us to remove unnecessary fields (for example, AP qualifications). It also allowed us to identify where fields were mandatory and use logic to help users reduce omissions that would cause an MCCD to be rejected/rework for the AP.
 
         <GridRow>
             <GridColumn width={'full'}>
-                <ZoomImage alt="TBC" small={'https://placehold.co/800x200?text=TBC'} medium={'https://placehold.co/800x200?text=TBC'} />
+                <ZoomImage alt="Spreadsheet documenting the MCCD data dictionary and question protocol" small={'/artefacts/images/question-protocol.png'} medium={'/artefacts/images/question-protocol.png'} />
             </GridColumn>
         </GridRow>
 
-        Knowing that using an unacceptable cause of death (for example,  'old age') is a key reason for registrars to reject, we considered how we could support APs to document a legitimate cause of death on an MCCD, first time. We consider using the Royal College of Pathologists' 'Cause of Death List' to provide a. prepopulated list for APs to choose from. This was something APs themselves has suggested would be helpful.  
+        Knowing that using an unacceptable cause of death (for example,  'old age') is a key reason for registrars to reject, we considered how we could support APs to document a legitimate cause of death on an MCCD, first time. We considered using the Royal College of Pathologists' 'Cause of Death List' to provide a. prepopulated list for APs to choose from. This was something APs themselves has suggested would be helpful.  
 
         However, the Cause of Death List is only guidance (rather than an exhaustive list), and there were concerns that this could unduly influence an AP's reporting.  
 
