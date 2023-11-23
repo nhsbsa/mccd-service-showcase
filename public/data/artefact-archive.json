@@ -70,5 +70,13 @@
     "activity": "Develop and test",
     "focus": "Technical",
     "type": "PDF"
+  },
+  {
+    "title": "Beta planning board",
+    "description": "A snapshot of the Miro board used to iterate and validate the beta planning activity",
+    "url": "/artefacts/pdf/beta-planning-snapshot-231123.pdf",
+    "activity": "Plan and demo",
+    "focus": "Product",
+    "type": "PDF"
   }
 ]
