@@ -8,7 +8,7 @@
     "type": "PDF"
   },
   {
-    "title": "Design log (Prototype v7): The medical examiner MCCD summary page (as of 12/10/2023)",
+    "title": "Design log (Prototype v7): Check your details before you start an MCCD (as of 12/10/2023)",
     "description": "",
     "url": "/artefacts/pdf/design-logs/proto-v7_your-details_17-10-2023.pdf",
     "activity": "Design and iterate",
@@ -16,7 +16,7 @@
     "type": "PDF"
   },
   {
-    "title": "Design log (Prototype v7): Check your details before you start an MCCD (as of 12/10/2023)",
+    "title": "Design log (Prototype v8): Postcode lookup (as of 23/10/2023)",
     "description": "",
     "url": "/artefacts/pdf/design-logs/proto-v8_postcode-lookup_23-10-2023.pdf",
     "activity": "Design and iterate",
@@ -24,7 +24,7 @@
     "type": "PDF"
   },
   {
-    "title": "Design log (Prototype v8): Postcode lookup (as of 23/10/2023)",
+    "title": "Design log (Prototype v9): The medical examiner declaration (as of 30/10/2023)",
     "description": "",
     "url": "/artefacts/pdf/design-logs/proto-v9_me-summary_30-10-2023.pdf",
     "activity": "Design and iterate",
@@ -32,7 +32,7 @@
     "type": "PDF"
   },
   {
-    "title": "Design log (Prototype v9): New questions (as of 30/10/2023)",
+    "title": "Design log (Prototype v9): New demographics questions (as of 30/10/2023)",
     "description": "",
     "url": "/artefacts/pdf/design-logs/proto-v9_new-questions_30-10-2023.pdf",
     "activity": "Design and iterate",
@@ -45,6 +45,70 @@
     "url": "/artefacts/pdf/design-logs/ur_user-flow-without-dashboards_1-11-2023.pdf",
     "activity": "Design and iterate",
     "focus": "Design",
+    "type": "PDF"
+  },
+  {
+    "title": "User research playback: Sprint 1 - What we learned about the current user experience",
+    "description": "",
+    "url": "/artefacts/pdf/ur-playbacks/sprint-1-playback.pdf",
+    "activity": "Research and validate",
+    "focus": "Research",
+    "type": "PDF"
+  },
+  {
+    "title": "User research playback: Sprint 2.1 - Bilingual discovery",
+    "description": "",
+    "url": "/artefacts/pdf/ur-playbacks/sprint-2.1-Bilingual-playback.pdf",
+    "activity": "Research and validate",
+    "focus": "Research",
+    "type": "PDF"
+  },
+  {
+    "title": "User research playback: Sprint 3 - What we learned about the current process and user feedback on the future service design",
+    "description": "",
+    "url": "/artefacts/pdf/ur-playbacks/sprint-3-playback.pdf",
+    "activity": "Research and validate",
+    "focus": "Research",
+    "type": "PDF"
+  },
+  {
+    "title": "User research playback: Sprint 3.4 - Registration and dashboard usability testing",
+    "description": "",
+    "url": "/artefacts/pdf/ur-playbacks/sprint-3.4-playback.pdf",
+    "activity": "Research and validate",
+    "focus": "Research",
+    "type": "PDF"
+  },
+  {
+    "title": "User research playback: Sprint 5 - Registry discovery",
+    "description": "",
+    "url": "/artefacts/pdf/ur-playbacks/sprint-5-playback.pdf",
+    "activity": "Research and validate",
+    "focus": "Research",
+    "type": "PDF"
+  },
+  {
+    "title": "User research playback: Sprint 5.1 - Informant research",
+    "description": "",
+    "url": "/artefacts/pdf/ur-playbacks/sprint-5.1-playback.pdf",
+    "activity": "Research and validate",
+    "focus": "Research",
+    "type": "PDF"
+  },
+  {
+    "title": "User research playback: Sprint 5.2 - Usability testing version 9 prototype",
+    "description": "",
+    "url": "/artefacts/pdf/ur-playbacks/sprint-5.2-playback.pdf",
+    "activity": "Research and validate",
+    "focus": "Research",
+    "type": "PDF"
+  },
+  {
+    "title": "Overview of MCCD user groups",
+    "description": "",
+    "url": "/artefacts/pdf/overview-mccd-user-groups.pdf",
+    "activity": "Research and validate",
+    "focus": "Research",
     "type": "PDF"
   },
   {

@@ -37,100 +37,6 @@ description: The home page description
 <GridRow>
 
     <GridColumn width={'full'}>
-        ## Making the questions as intuitive as possible
-    </GridColumn>
-
-    <GridColumn width={'3/4'}>
-
-        ### This relates to user needs of 'speed' and 'accuracy'
-
-        * As an attending practitioner (AP) I need to complete the Medical certificate of cause of death (MCCD) as quickly as possible so that I can move onto working on my next task.
-        * As an AP I need to complete the MCCD accurately first time, so I don't have to waste my time re-doing it causing delays to others.
-
-        ### What we tested
-
-        * Cause of death questions (1a-c, and 2) in a one question per page format
-
-        <GridRow>
-            <GridColumn width={'1/4'}>
-                <ZoomImage alt="Iteration 3 - cause of death 1a" small={'/artefacts/images/it3-screen-1.png'} medium={'/artefacts/images/it3-screen-1.png'} />
-            </GridColumn>
-            <GridColumn width={'1/4'}>
-                <ZoomImage alt="Iteration 3 - cause of death 1b" small={'/artefacts/images/it3-screen-2.png'} medium={'/artefacts/images/it3-screen-2.png'} />
-            </GridColumn>
-            <GridColumn width={'1/4'}>
-                <ZoomImage alt="Iteration 3 - cause of death 1c" small={'/artefacts/images/it3-screen-3.png'} medium={'/artefacts/images/it3-screen-3.png'} />
-            </GridColumn>
-            <GridColumn width={'1/4'}>
-                <ZoomImage alt="Iteration 3 - secondary cause of death" small={'/artefacts/images/it3-screen-4.png'} medium={'/artefacts/images/it3-screen-4.png'} />
-            </GridColumn>
-        </GridRow>
-
-    <InsetText>
-        <Details title={'Design rationale and insights'}>  
-        Initial designs for the digital MCCD followed a one question per page format, in line with good practice. When testing the full question set, most of the form was completed with minimal friction. However, questions relating to the cause of death were the exception.
-        </Details>
-    </InsetText>
-
-        ### What we found 
-
-        * Separating the cause of death questions, prevent users from easily identifying the correct narrative. 
-        * TThis makes completing the MCCD more difficult and slower, and increases the risk of mistakes. 
-
-        <WarningCallout title={"Dual role AP"} className="quote">
-            “I think you'll get fewer confusions if it's on one page. Because that's how that paper form is, and it prompts people to think about the order of business.”
-        </WarningCallout>
-        
-        <WarningCallout title={"ME"} className="quote">
-            “It would be nice to see these questions played out in one menu because this going back and forth is ok, functional and nice and clear but [its a pain]... I wouldn't have misinterpreted it, if I'd seen the next question later on.”
-        </WarningCallout>
-
-     <InsetText>
-        <Details title={'Research insights'}>  
-        We found one page per question was problematic for the cause of death questions (1a, 1b, 1c and part 2). Separating these questions consistently caused confusion and created friction in the journey for users. They spent time going back and forth between the questions, often amending previously input content.  
-        </Details>
-    </InsetText>
-
-        We tested several variations and found that including all questions (part 1 and 2) on the same page was the most optimal journey. It allowed users to tell a cohesive narrative building upon each question.
-
-        <WarningCallout title={"Dual role AP"} className="quote">
-            “Ah right, so I got confused here, diabetes should be going in here. If you laid it out, so it looks more like the paper one. Maybe if you had this bit more clearly question one and then question 2 on the same page, I think that would probably make more sense than separating them.”
-        </WarningCallout>
-
-        <GridRow>
-            <GridColumn width={'1/2'}>
-                <ZoomImage alt="Iteration 4 - primary and secondary causes of death shown together with time between onset and death" small={'/artefacts/images/it4-cause-death.png'} medium={'/artefacts/images/it4-cause-death.png'} />
-            </GridColumn>
-        </GridRow>
-
-        We've recently iterated further, to improve question clarity and data quality by: 
-
-        * adding 'time since onset' onto the same line as the condition it relates to
-        * allowing users to specify the unit of measurement
-        
-        <WarningCallout title={"ME"} className="quote">
-            “You need the onset to be clearly due to the cause [feels onset being under COD makes it harder to interpret]”
-        </WarningCallout>
-
-    <InsetText>
-        <Details title={'Design rationale'}> 
-        In feedback, users said that placing the time of onset field under the input field it relates to is confusing. We've now moved the time of onset field to the same row. We've also tested how we might improve data accuracy for ONS by including units of measurement in the time field.  This still requires further testing. 
-        </Details>
-    </InsetText>
-
-        <GridRow>
-            <GridColumn width={'1/2'}>
-                <ZoomImage alt="Version 10 - updated to GDS styles showing all causes of death together and allowing selection of units of time" small={'/artefacts/images/V10-cause-of-death.png'} medium={'/artefacts/images/V10-cause-of-death.png'} />
-            </GridColumn>
-        </GridRow>
-
-    </GridColumn>
-
-</GridRow>
-
-<GridRow>
-
-    <GridColumn width={'full'}>
         ## Supporting interactions between MCCD users
     </GridColumn>
 
@@ -248,6 +154,100 @@ description: The home page description
         <WarningCallout title={"AP"} className="quote">
             "You know, once these things are submitted, it's helpful to be able to check in and just know where things are up to. If it's just reliant on an e-mail being sent out those things not infrequently go to spam and as I've said, I have a degree of scepticism, when initially receiving emails like that. And so having a system that I can log into and go "OK, yeah, that's been accepted" is helpful as a second verifying thing that also what's said in this e-mail is also the case on my secure login."
         </WarningCallout>
+
+    </GridColumn>
+
+</GridRow>
+
+<GridRow>
+
+    <GridColumn width={'full'}>
+        ## Making the questions as intuitive as possible
+    </GridColumn>
+
+    <GridColumn width={'3/4'}>
+
+        ### This relates to user needs of 'speed' and 'accuracy'
+
+        * As an attending practitioner (AP) I need to complete the Medical certificate of cause of death (MCCD) as quickly as possible so that I can move onto working on my next task.
+        * As an AP I need to complete the MCCD accurately first time, so I don't have to waste my time re-doing it causing delays to others.
+
+        ### What we tested
+
+        * Cause of death questions (1a-c, and 2) in a one question per page format
+
+        <GridRow>
+            <GridColumn width={'1/4'}>
+                <ZoomImage alt="Iteration 3 - cause of death 1a" small={'/artefacts/images/it3-screen-1.png'} medium={'/artefacts/images/it3-screen-1.png'} />
+            </GridColumn>
+            <GridColumn width={'1/4'}>
+                <ZoomImage alt="Iteration 3 - cause of death 1b" small={'/artefacts/images/it3-screen-2.png'} medium={'/artefacts/images/it3-screen-2.png'} />
+            </GridColumn>
+            <GridColumn width={'1/4'}>
+                <ZoomImage alt="Iteration 3 - cause of death 1c" small={'/artefacts/images/it3-screen-3.png'} medium={'/artefacts/images/it3-screen-3.png'} />
+            </GridColumn>
+            <GridColumn width={'1/4'}>
+                <ZoomImage alt="Iteration 3 - secondary cause of death" small={'/artefacts/images/it3-screen-4.png'} medium={'/artefacts/images/it3-screen-4.png'} />
+            </GridColumn>
+        </GridRow>
+
+    <InsetText>
+        <Details title={'Design rationale and insights'}>  
+        Initial designs for the digital MCCD followed a one question per page format, in line with good practice. When testing the full question set, most of the form was completed with minimal friction. However, questions relating to the cause of death were the exception.
+        </Details>
+    </InsetText>
+
+        ### What we found 
+
+        * Separating the cause of death questions, prevent users from easily identifying the correct narrative. 
+        * TThis makes completing the MCCD more difficult and slower, and increases the risk of mistakes. 
+
+        <WarningCallout title={"Dual role AP"} className="quote">
+            “I think you'll get fewer confusions if it's on one page. Because that's how that paper form is, and it prompts people to think about the order of business.”
+        </WarningCallout>
+        
+        <WarningCallout title={"ME"} className="quote">
+            “It would be nice to see these questions played out in one menu because this going back and forth is ok, functional and nice and clear but [its a pain]... I wouldn't have misinterpreted it, if I'd seen the next question later on.”
+        </WarningCallout>
+
+     <InsetText>
+        <Details title={'Research insights'}>  
+        We found one page per question was problematic for the cause of death questions (1a, 1b, 1c and part 2). Separating these questions consistently caused confusion and created friction in the journey for users. They spent time going back and forth between the questions, often amending previously input content.  
+        </Details>
+    </InsetText>
+
+        We tested several variations and found that including all questions (part 1 and 2) on the same page was the most optimal journey. It allowed users to tell a cohesive narrative building upon each question.
+
+        <WarningCallout title={"Dual role AP"} className="quote">
+            “Ah right, so I got confused here, diabetes should be going in here. If you laid it out, so it looks more like the paper one. Maybe if you had this bit more clearly question one and then question 2 on the same page, I think that would probably make more sense than separating them.”
+        </WarningCallout>
+
+        <GridRow>
+            <GridColumn width={'1/2'}>
+                <ZoomImage alt="Iteration 4 - primary and secondary causes of death shown together with time between onset and death" small={'/artefacts/images/it4-cause-death.png'} medium={'/artefacts/images/it4-cause-death.png'} />
+            </GridColumn>
+        </GridRow>
+
+        We've recently iterated further, to improve question clarity and data quality by: 
+
+        * adding 'time since onset' onto the same line as the condition it relates to
+        * allowing users to specify the unit of measurement
+        
+        <WarningCallout title={"ME"} className="quote">
+            “You need the onset to be clearly due to the cause [feels onset being under COD makes it harder to interpret]”
+        </WarningCallout>
+
+    <InsetText>
+        <Details title={'Design rationale'}> 
+        In feedback, users said that placing the time of onset field under the input field it relates to is confusing. We've now moved the time of onset field to the same row. We've also tested how we might improve data accuracy for ONS by including units of measurement in the time field.  This still requires further testing. 
+        </Details>
+    </InsetText>
+
+        <GridRow>
+            <GridColumn width={'1/2'}>
+                <ZoomImage alt="Version 10 - updated to GDS styles showing all causes of death together and allowing selection of units of time" small={'/artefacts/images/V10-cause-of-death.png'} medium={'/artefacts/images/V10-cause-of-death.png'} />
+            </GridColumn>
+        </GridRow>
 
     </GridColumn>
 
