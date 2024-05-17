@@ -158,5 +158,13 @@
     "activity": "Design and iterate",
     "focus": "Design",
     "type": "Website"
+  },
+  {
+    "title": "As-is service bluepriny explainer - death certification reform - part 1",
+    "description": "A recorded run through of the as-is service blueprint during the Beta",
+    "url": "/videos/BETA_DCR_explainer_as-is_blueprint_pt1.mp4",
+    "activity": "Plan and demo",
+    "focus": "Design",
+    "type": "Video"
   }
 ]
