@@ -160,9 +160,17 @@
     "type": "Website"
   },
   {
-    "title": "As-is service bluepriny explainer - death certification reform - part 1",
+    "title": "Part 1 - As-is service blueprint explainer - death certification reform",
     "description": "A recorded run through of the as-is service blueprint during the Beta",
     "url": "/videos/BETA_DCR_explainer_as-is_blueprint_pt1.mp4",
+    "activity": "Plan and demo",
+    "focus": "Design",
+    "type": "Video"
+  },
+  {
+    "title": "Part 2 - As-is service blueprint explainer - death certification reform",
+    "description": "A recorded run through of the as-is service blueprint during the Beta",
+    "url": "/videos/BETA_DCR_explainer_as-is_blueprint_pt2.mp4",
     "activity": "Plan and demo",
     "focus": "Design",
     "type": "Video"
