@@ -5,6 +5,7 @@
     "url": "/artefacts/pdf/design-logs/proto-v7_me-summary_17-10-2023.pdf",
     "activity": "Design and iterate",
     "focus": "Design",
+    "phase": "Alpha",
     "type": "PDF"
   },
   {
@@ -13,6 +14,7 @@
     "url": "/artefacts/pdf/design-logs/proto-v7_your-details_17-10-2023.pdf",
     "activity": "Design and iterate",
     "focus": "Design",
+    "phase": "Alpha",
     "type": "PDF"
   },
   {
@@ -21,6 +23,7 @@
     "url": "/artefacts/pdf/design-logs/proto-v8_postcode-lookup_23-10-2023.pdf",
     "activity": "Design and iterate",
     "focus": "Design",
+    "phase": "Alpha",
     "type": "PDF"
   },
   {
@@ -29,6 +32,7 @@
     "url": "/artefacts/pdf/design-logs/proto-v9_me-summary_30-10-2023.pdf",
     "activity": "Design and iterate",
     "focus": "Design",
+    "phase": "Alpha",
     "type": "PDF"
   },
   {
@@ -37,6 +41,7 @@
     "url": "/artefacts/pdf/design-logs/proto-v9_new-questions_30-10-2023.pdf",
     "activity": "Design and iterate",
     "focus": "Design",
+    "phase": "Alpha",
     "type": "PDF"
   },
   {
@@ -45,6 +50,7 @@
     "url": "/artefacts/pdf/design-logs/ur_user-flow-without-dashboards_1-11-2023.pdf",
     "activity": "Design and iterate",
     "focus": "Design",
+    "phase": "Alpha",
     "type": "PDF"
   },
   {
@@ -53,6 +59,7 @@
     "url": "/artefacts/pdf/ur-playbacks/sprint-1-playback.pdf",
     "activity": "Research and validate",
     "focus": "Research",
+    "phase": "Alpha",
     "type": "PDF"
   },
   {
@@ -61,6 +68,7 @@
     "url": "/artefacts/pdf/ur-playbacks/sprint-2.1-Bilingual-playback.pdf",
     "activity": "Research and validate",
     "focus": "Research",
+    "phase": "Alpha",
     "type": "PDF"
   },
   {
@@ -69,6 +77,7 @@
     "url": "/artefacts/pdf/ur-playbacks/sprint-3-playback.pdf",
     "activity": "Research and validate",
     "focus": "Research",
+    "phase": "Alpha",
     "type": "PDF"
   },
   {
@@ -77,6 +86,7 @@
     "url": "/artefacts/pdf/ur-playbacks/sprint-3.4-playback.pdf",
     "activity": "Research and validate",
     "focus": "Research",
+    "phase": "Alpha",
     "type": "PDF"
   },
   {
@@ -85,6 +95,7 @@
     "url": "/artefacts/pdf/ur-playbacks/sprint-5-playback.pdf",
     "activity": "Research and validate",
     "focus": "Research",
+    "phase": "Alpha",
     "type": "PDF"
   },
   {
@@ -93,6 +104,7 @@
     "url": "/artefacts/pdf/ur-playbacks/sprint-5.1-playback.pdf",
     "activity": "Research and validate",
     "focus": "Research",
+    "phase": "Alpha",
     "type": "PDF"
   },
   {
@@ -101,6 +113,7 @@
     "url": "/artefacts/pdf/ur-playbacks/sprint-5.2-playback.pdf",
     "activity": "Research and validate",
     "focus": "Research",
+    "phase": "Alpha",
     "type": "PDF"
   },
   {
@@ -109,6 +122,7 @@
     "url": "/artefacts/pdf/overview-mccd-user-groups.pdf",
     "activity": "Research and validate",
     "focus": "Research",
+    "phase": "Alpha",
     "type": "PDF"
   },
   {
@@ -117,6 +131,7 @@
     "url": "/artefacts/pdf/MCCD-MES-style-guide.pdf",
     "activity": "Design and iterate",
     "focus": "Design",
+    "phase": "Alpha",
     "type": "PDF"
   },
   {
@@ -125,6 +140,7 @@
     "url": "https://mccd-govuk.herokuapp.com/",
     "activity": "Design and iterate",
     "focus": "Design",
+    "phase": "Alpha",
     "type": "Website"
   },
   {
@@ -133,6 +149,7 @@
     "url": "/artefacts/pdf/mccd-performance-framework.pdf",
     "activity": "Develop and test",
     "focus": "Technical",
+    "phase": "Alpha",
     "type": "PDF"
   },
   {
@@ -141,6 +158,7 @@
     "url": "/artefacts/pdf/beta-planning-snapshot-231123.pdf",
     "activity": "Plan and demo",
     "focus": "Product",
+    "phase": "Alpha",
     "type": "PDF"
   },
   {
@@ -149,6 +167,7 @@
     "url": "/artefacts/pdf/mccd-as-is-service-map-wip.pdf",
     "activity": "Design and iterate",
     "focus": "Design",
+    "phase": "Alpha",
     "type": "Website"
   },
   {
@@ -157,6 +176,7 @@
     "url": "/artefacts/pdf/mccd-to-be-service-map-wip.pdf",
     "activity": "Design and iterate",
     "focus": "Design",
+    "phase": "Alpha",
     "type": "Website"
   },
   {
@@ -165,6 +185,7 @@
     "url": "/videos/BETA_DCR_explainer_as-is_blueprint_pt1.mp4",
     "activity": "Plan and demo",
     "focus": "Design",
+    "phase": "Beta",
     "type": "Video"
   },
   {
@@ -173,6 +194,16 @@
     "url": "/videos/BETA_DCR_explainer_as-is_blueprint_pt2.mp4",
     "activity": "Plan and demo",
     "focus": "Design",
+    "phase": "Beta",
+    "type": "Video"
+  },
+  {
+    "title": "MVP prototype walkthrough",
+    "description": "A recorded demo of version 10.1 of the prototype - Attending practitioner creates and submits an MCCD",
+    "url": "/videos/BETA_MCCD-V10.1_demo.mp4",
+    "activity": "Plan and demo",
+    "focus": "Design",
+    "phase": "Beta",
     "type": "Video"
   }
 ]
