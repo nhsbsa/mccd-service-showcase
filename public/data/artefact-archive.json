@@ -205,5 +205,14 @@
     "focus": "Design",
     "phase": "Beta",
     "type": "Video"
+  },
+  {
+    "title": "MES manage my caseload prototype walkthrough",
+    "description": "A recorded demo of version 10.1 of the prototype - Attending practitioner creates and submits an MCCD",
+    "url": "/videos/MES-manage-my-caseload-demo.mp4",
+    "activity": "Plan and demo",
+    "focus": "",
+    "phase": "",
+    "type": "Video"
   }
 ]
