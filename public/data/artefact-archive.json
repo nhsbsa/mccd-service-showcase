@@ -204,6 +204,24 @@
     "activity": "Plan and demo",
     "focus": "Design",
     "phase": "Beta",
+    "type": "Video"},
+  
+  {
+    "title": "Private Beta demo - AP journey",
+    "description": "A recorded demo walking through how an attending practitioner creates and submits a certificate, and that certificate is handled through scrutiny by the ME office and medical examiner",
+    "url": "/videos/MCCD_demo_AP66.mp4",
+    "activity": "Plan and demo",
+    "focus": "Product",
+    "phase": "Beta",
+    "type": "Video"
+  },  
+  {
+    "title": "Private Beta demo - ME Cert journey",
+    "description": "A recorded demo walking through how a Medical examiner can complete an ME MCCD in the digital MCCD",
+    "url": "/videos/MCCD_demo_ME65.mp4",
+    "activity": "Plan and demo",
+    "focus": "Product",
+    "phase": "Beta",
     "type": "Video"
   },
   {
